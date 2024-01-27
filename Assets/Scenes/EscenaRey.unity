@@ -1502,11 +1502,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &687017804 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1134418177098709789, guid: b22ed6374c35deb4ca48151d7433b4ea, type: 3}
-  m_PrefabInstance: {fileID: 1134418177493955665}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &687017805 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1134418177098709788, guid: b22ed6374c35deb4ca48151d7433b4ea, type: 3}
@@ -5223,12 +5218,11 @@ MonoBehaviour:
   timer: 0
   sceneManager: {fileID: 11400000, guid: 9f19053667582ec4aaf4431c4a7723d1, type: 2}
   stopTimer: 0
-  cambiosdeAnimo:
-  - {fileID: 1054367710}
-  - {fileID: 1221842635}
-  - {fileID: 687017804}
-  - {fileID: 1068147273}
-  - {fileID: 337701233}
+  cambiosMuyContento: {fileID: 337701233}
+  cambiosContento: {fileID: 0}
+  cambiosserio: {fileID: 0}
+  cambiosenfadado: {fileID: 0}
+  cambiosMuyEnfadado: {fileID: 0}
 --- !u!4 &1677563654
 Transform:
   m_ObjectHideFlags: 0

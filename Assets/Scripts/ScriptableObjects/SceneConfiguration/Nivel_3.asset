@@ -27,9 +27,9 @@ MonoBehaviour:
   chistesRopa: 0
   IsSombreroInScene: 0
   tiempoNivel: 75
-  tiempoSpawnLacayos: 3
-  tiempoSpawnChistes: 6
-  tiempoSpawnSombrero: 27
+  tiempoSpawnLacayos: 9
+  tiempoSpawnChistes: 15
+  tiempoSpawnSombrero: 33
   probalidadSpawnbeanLisa: 25
   probalidadSpawnbeanRallada: 50
   probalidadSpawnbeanPuntos: 75

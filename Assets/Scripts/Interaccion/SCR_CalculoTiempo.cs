@@ -129,7 +129,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
         //StartCoroutine(SpawnLacayos());
         int randomNumber = Random.Range(0, 100);
 
-        Debug.Log(randomNumber);
+        //Debug.Log(randomNumber);
 
         if (randomNumber <= 50)
         {
