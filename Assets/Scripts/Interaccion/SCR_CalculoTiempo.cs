@@ -266,14 +266,14 @@ public class SCR_CalculoTiempo : MonoBehaviour
 
     public Transform RandomSpawnChistes()
     {
-        int spawnRandom = Random.Range(0, 5);
+        int spawnRandom = Random.Range(0, 4);
 
         return spawnpointChistes[spawnRandom].transform;
     }
 
     public GameObject ChistePobreza()
     {
-        int randomChiste = Random.Range(0, 5);
+        int randomChiste = Random.Range(0, 4);
         GameObject chiste;
 
         chiste = chistesPobreza[randomChiste];
@@ -283,7 +283,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
     }
     public GameObject ChisteAnimales()
     {
-        int randomChiste = Random.Range(0, 5);
+        int randomChiste = Random.Range(0, 4);
         GameObject chiste;
 
         chiste = chistesAnimales[randomChiste];
@@ -303,7 +303,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
     }
     public GameObject ChisteRopa()
     {
-        int randomChiste = Random.Range(0, 5);
+        int randomChiste = Random.Range(0, 4);
         GameObject chiste;
 
         chiste = chistesRopa[randomChiste];
