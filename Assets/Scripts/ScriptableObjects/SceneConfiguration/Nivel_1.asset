@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec77c45cc9603347b2da5e31a555f5b, type: 3}
+  m_Name: Nivel_1
+  m_EditorClassIdentifier: 
+  timer: 20
+  timerSpeed: 1
+  patito: 1
+  cajitaMusica: 1
+  confeti: 1
+  beanLisa: 1
+  beanRallada: 1
+  beanPuntos: 1
+  beanEstrellas: 1
+  chistesPobreza: 1
+  chistesAnimales: 1
+  chistesAmor: 1
+  chistesRopa: 1
+  IsSombreroInScene: 0
+  tiempoNivel: 60
+  tiempoSpawnLacayos: 3
+  tiempoSpawnChistes: 6
+  tiempoSpawnSombrero: 27
+  probalidadSpawnbeanLisa: 25
+  probalidadSpawnbeanRallada: 50
+  probalidadSpawnbeanPuntos: 75
+  probalidadSpawnbeanEstrellada: 100
+  probabilidadLacayo1: 25
+  probabilidadLacayo2: 50
+  probabilidadLacayo3: 75
+  probabilidadLacayo4: 100
+  probabilidadSpawnSombrero: 25
+  probabilidadSpawnSombrero1: 50
+  probabilidadSpawnSombrero2: 75
+  probabilidadSpawnSombrero3: 100
+  probabilidadSpawnChistePobreza: 25
+  probabilidadSpawnChisteAnimales: 50
+  probabilidadSpawnChisteAmor: 75
+  probabilidadSpawnChisteRopa: 100
