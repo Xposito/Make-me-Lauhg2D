@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: BeanRallas
   m_EditorClassIdentifier: 
   ID: 1
-  valorSlide: 2
+  valorSlide: 3
   scaleTime: 0.8

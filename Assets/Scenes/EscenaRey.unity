@@ -1757,7 +1757,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cf591e180fd4f94e85188c1ca9340ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  confeti: {fileID: 11400000, guid: 78a5ae9e08888974aaa522332329f3d5, type: 2}
+  confeti_SCO: {fileID: 11400000, guid: 78a5ae9e08888974aaa522332329f3d5, type: 2}
+  sombrero_SCO: {fileID: 11400000, guid: e26f11bd0bd56514fa62897e5edd81dd, type: 2}
 --- !u!114 &1677563656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1792,8 +1793,12 @@ MonoBehaviour:
   lacayos_2: {fileID: 1737828670}
   lacayos_3: {fileID: 830931968}
   lacayos_4: {fileID: 939278982}
-  spawnpointsombreros: []
-  sombrero: {fileID: 0}
+  spawnpointsombreros:
+  - {fileID: 21392122}
+  - {fileID: 1129577913}
+  - {fileID: 391073752}
+  - {fileID: 554276276}
+  sombrero: {fileID: 1812982611}
   beanLisa: {fileID: 1437938009}
   beanRallada: {fileID: 737064649}
   beanPuntos: {fileID: 341149710}

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: BeanLisa
   m_EditorClassIdentifier: 
   ID: 0
-  valorSlide: 2
+  valorSlide: 3
   scaleTime: 0.8

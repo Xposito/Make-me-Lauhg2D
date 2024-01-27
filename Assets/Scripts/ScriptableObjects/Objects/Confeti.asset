@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Confeti
   m_EditorClassIdentifier: 
   ID: 2
-  valorSlide: 4
+  valorSlide: 5
   scaleTime: 1.5
-  Used: 0
+  Used: 1

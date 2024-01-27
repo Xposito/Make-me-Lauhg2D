@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bec77c45cc9603347b2da5e31a555f5b, type: 3}
   m_Name: SceneConfiguration
   m_EditorClassIdentifier: 
-  timer: 10
-  timerSpeed: 0.8
-  patito: 0
+  timer: 15
+  timerSpeed: 1
+  patito: 1
   cajitaMusica: 1
   confeti: 1
   beanLisa: 1
@@ -25,7 +25,7 @@ MonoBehaviour:
   tiempoNivel: 60
   tiempoSpawnLacayos: 3
   tiempoSpawnChistes: 0
-  tiempoSpawnSombrero: 25
+  tiempoSpawnSombrero: 27
   probalidadSpawnbeanLisa: 25
   probalidadSpawnbeanRallada: 50
   probalidadSpawnbeanPuntos: 75

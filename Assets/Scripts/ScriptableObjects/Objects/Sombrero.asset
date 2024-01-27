@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Sombrero
   m_EditorClassIdentifier: 
   ID: 3
-  valorSlide: 0
+  valorSlide: 1
   scaleTime: 1.2
   Used: 0
