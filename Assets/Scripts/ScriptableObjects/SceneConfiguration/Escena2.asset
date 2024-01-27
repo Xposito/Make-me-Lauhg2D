@@ -12,37 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bec77c45cc9603347b2da5e31a555f5b, type: 3}
   m_Name: Escena2
   m_EditorClassIdentifier: 
-  timer: 0
-  timerSpeed: 0
-  patito: 0
-  cajitaMusica: 0
-  confeti: 0
-  beanLisa: 0
-  beanRallada: 0
-  beanPuntos: 0
-  beanEstrellas: 0
-  chistesPobreza: 0
-  chistesAnimales: 0
-  chistesAmor: 0
-  chistesRopa: 0
+  timer: 15
+  timerSpeed: 1
+  patito: 1
+  cajitaMusica: 1
+  confeti: 1
+  beanLisa: 1
+  beanRallada: 1
+  beanPuntos: 1
+  beanEstrellas: 1
+  chistesPobreza: 1
+  chistesAnimales: 1
+  chistesAmor: 1
+  chistesRopa: 1
   IsSombreroInScene: 0
-  tiempoNivel: 0
-  tiempoSpawnLacayos: 0
-  tiempoSpawnChistes: 0
-  tiempoSpawnSombrero: 0
-  probalidadSpawnbeanLisa: 0
-  probalidadSpawnbeanRallada: 0
-  probalidadSpawnbeanPuntos: 0
-  probalidadSpawnbeanEstrellada: 0
-  probabilidadLacayo1: 0
+  tiempoNivel: 60
+  tiempoSpawnLacayos: 3
+  tiempoSpawnChistes: 10
+  tiempoSpawnSombrero: 10
+  probalidadSpawnbeanLisa: 25
+  probalidadSpawnbeanRallada: 50
+  probalidadSpawnbeanPuntos: 75
+  probalidadSpawnbeanEstrellada: 100
+  probabilidadLacayo1: 100
   probabilidadLacayo2: 0
   probabilidadLacayo3: 0
   probabilidadLacayo4: 0
-  probabilidadSpawnSombrero: 0
-  probabilidadSpawnSombrero1: 0
-  probabilidadSpawnSombrero2: 0
-  probabilidadSpawnSombrero3: 0
-  probabilidadSpawnChistePobreza: 0
-  probabilidadSpawnChisteAnimales: 0
-  probabilidadSpawnChisteAmor: 0
-  probabilidadSpawnChisteRopa: 0
+  probabilidadSpawnSombrero: 25
+  probabilidadSpawnSombrero1: 50
+  probabilidadSpawnSombrero2: 75
+  probabilidadSpawnSombrero3: 100
+  probabilidadSpawnChistePobreza: 25
+  probabilidadSpawnChisteAnimales: 50
+  probabilidadSpawnChisteAmor: 75
+  probabilidadSpawnChisteRopa: 100
