@@ -21,3 +21,14 @@ MonoBehaviour:
   beanRallada: 1
   beanPuntos: 1
   beanEstrellas: 1
+  tiempoNivel: 120
+  tiempoSpawnLacayos: 3
+  tiempoSpawnChistes: 0
+  probalidadSpawnbeanLisa: 25
+  probalidadSpawnbeanRallada: 50
+  probalidadSpawnbeanPuntos: 75
+  probalidadSpawnbeanEstrellada: 100
+  probabilidadLacayo1: 25
+  probabilidadLacayo2: 50
+  probabilidadLacayo3: 75
+  probabilidadLacayo4: 100
