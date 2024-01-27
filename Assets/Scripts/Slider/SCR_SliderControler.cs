@@ -11,7 +11,7 @@ public class SCR_SliderControler : MonoBehaviour
 
     int clicks = 0;
     float valor;
-    float timer;
+    public float timer;
 
     public SCO_SceneManager sceneManager;
 
@@ -23,6 +23,35 @@ public class SCR_SliderControler : MonoBehaviour
         slider.maxValue = sceneManager.timer;
         slider.value = sceneManager.timer;
         StartTimer();
+    }
+
+
+    private void Update()
+    {
+        valor = slider.value / slider.maxValue;
+        UpdateColor(valor);
+
+        if(timer <= slider.maxValue * (20 / 100))
+        {
+            Debug.Log("menos del 20%");
+        }
+        if (timer <= slider.maxValue * 40 / 100 && timer > slider.maxValue * 20 / 100)
+        {
+            Debug.Log("menos del 40%");
+        }   
+        if (timer <= slider.maxValue * 60 / 100 && timer > slider.maxValue * 40 / 100)
+        {
+            Debug.Log("menos del 60%");
+        }
+        if (timer <= slider.maxValue * 80 / 100 && timer > slider.maxValue * 60 / 100)
+        {
+            Debug.Log("menos del 80%");
+        }
+        if (timer <= slider.maxValue * 100 / 100 && timer > slider.maxValue * 80 / 100)
+        {
+            
+            Debug.Log("menos del 100%");
+        }
     }
 
     public void StartTimer()
@@ -54,11 +83,7 @@ public class SCR_SliderControler : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        valor = slider.value/slider.maxValue;
-        UpdateColor(valor);
-    }
+    
     // Método que cambia el color del Fill del Slider según su valor
     void UpdateColor(float value)
     {

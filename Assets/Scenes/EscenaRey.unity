@@ -1227,6 +1227,7 @@ GameObject:
   - component: {fileID: 1677563653}
   - component: {fileID: 1677563655}
   - component: {fileID: 1677563656}
+  - component: {fileID: 1677563657}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -1241,13 +1242,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677563652}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5611951518461c4f93d82f85816ed30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 628029543}
   fillImage: {fileID: 1798931045}
+  timer: 0
   sceneManager: {fileID: 11400000, guid: 9f19053667582ec4aaf4431c4a7723d1, type: 2}
   stopTimer: 0
 --- !u!4 &1677563654
@@ -1272,7 +1274,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677563652}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cf591e180fd4f94e85188c1ca9340ad, type: 3}
   m_Name: 
@@ -1293,6 +1295,18 @@ MonoBehaviour:
   object_Configuration: {fileID: 0}
   bean_Data: {fileID: 0}
   sceneManager: {fileID: 11400000, guid: 9f19053667582ec4aaf4431c4a7723d1, type: 2}
+--- !u!114 &1677563657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677563652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ac03dd6e52712468b47192a85cca44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1710807566
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bec77c45cc9603347b2da5e31a555f5b, type: 3}
   m_Name: SceneConfiguration
   m_EditorClassIdentifier: 
-  timer: 60
+  timer: 10
   timerSpeed: 1
-  patito: 1
+  patito: 0
   cajitaMusica: 1
   confeti: 1
   beanLisa: 1
