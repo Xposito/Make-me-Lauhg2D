@@ -46,8 +46,8 @@ Material:
     - _CastShadows: 0
     - _Cull: 2
     - _DstBlend: 0
-    - _Fuzziness: 1.25
-    - _HueRange: 0
+    - _Fuzziness: 0.68
+    - _HueRange: 0.21
     - _QueueControl: 0
     - _QueueOffset: 1
     - _SrcBlend: 1

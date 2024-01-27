@@ -20,6 +20,12 @@ public class SCR_SliderControler : MonoBehaviour
 
     public GameObject[] cambiosdeAnimo;
 
+    bool muycontento = true;
+    bool contento;
+    bool serio;
+    bool enfadado;
+    bool muyenfadado;
+
     #endregion
 
     void Start()
@@ -41,83 +47,67 @@ public class SCR_SliderControler : MonoBehaviour
 
         if(timer <= slider.maxValue * (20 / 100))
         {
-            cambiosdeAnimo[0].SetActive(true);
-
-            for (int i = 0; i < cambiosdeAnimo.Length;)
+            if (muyenfadado)
             {
-                
-                if (i != 0f)
-                {
-                    cambiosdeAnimo[i].SetActive(false);
-                }
-                i++;
-
+                muyenfadado= false;
+                StartCoroutine(cambioestado(0));
             }
+            contento =  true;
+            serio = true;
+            enfadado = true;
+            muycontento= true;
             Debug.Log("menos del 20%");
         }
         if (timer <= slider.maxValue * 40 / 100 && timer > slider.maxValue * 20 / 100)
         {
-            cambiosdeAnimo[1].SetActive(true);
-            for (int i = 0; i < cambiosdeAnimo.Length;)
+            if (enfadado)
             {
-                
-                
-                if (i != 1f)
-                {
-                    cambiosdeAnimo[i].SetActive(false);
-                }
-                i++;
-
+                enfadado = false;
+                StartCoroutine(cambioestado(1));
             }
+            muycontento = true;
+            serio = true;
+            contento = true;
+            muyenfadado = true;
             Debug.Log("menos del 40%");
         }   
         if (timer <= slider.maxValue * 60 / 100 && timer > slider.maxValue * 40 / 100)
         {
-            cambiosdeAnimo[2].SetActive(true);
-            for (int i = 0; i < cambiosdeAnimo.Length;)
+            if (serio)
             {
-                
-                
-                if (i != 2f)
-                {
-                    cambiosdeAnimo[i].SetActive(false);
-                }
-                i++;
-
-
+                serio = false;
+                StartCoroutine(cambioestado(2));
             }
+            muycontento =  true;
+            contento = true;
+            enfadado = true;
+            muyenfadado= true;
             Debug.Log("menos del 60%");
         }
         if (timer <= slider.maxValue * 80 / 100 && timer > slider.maxValue * 60 / 100)
         {
-            cambiosdeAnimo[3].SetActive(true);
-            for (int i = 0; i < cambiosdeAnimo.Length;)
+            if (contento)
             {
-                
-                
-                if (i != 3f)
-                {
-                    cambiosdeAnimo[i].SetActive(false);
-                }
-                i++;
-
+                contento = false;
+                StartCoroutine(cambioestado(3));
             }
+            muycontento = true;
+            serio = true;
+            enfadado = true;
+            muyenfadado = true;
             Debug.Log("menos del 80%");
         }
         if (timer <= slider.maxValue * 100 / 100 && timer > slider.maxValue * 80 / 100)
         {
-            cambiosdeAnimo[4].SetActive(true);
-            for (int i = 0; i < cambiosdeAnimo.Length;)
+            if (muycontento)
             {
-                
-                
-                if(i != 4f)
-                {
-                    cambiosdeAnimo[i].SetActive(false);
-                }
-
-                i++;
+                muycontento = false;
+                StartCoroutine(cambioestado(4));
             }
+            contento = true;
+            serio = true;
+            enfadado = true;
+            muyenfadado = true;
             Debug.Log("menos del 100%");
         }
 
@@ -257,5 +247,40 @@ public class SCR_SliderControler : MonoBehaviour
         }
 
     }
-    
+    IEnumerator cambioestado(int numerodelestado)
+    {
+        cambiosdeAnimo[numerodelestado].SetActive(true);
+        
+
+        yield return new WaitForSeconds(1f);
+
+        for (int i = 0; i < cambiosdeAnimo.Length;)
+        {
+            if (i != numerodelestado)
+            {
+                cambiosdeAnimo[i].SetActive(false);
+            }
+
+            i++;
+        }
+        cambiosdeAnimo[numerodelestado].transform.GetChild(0).gameObject.SetActive(true);
+    }
+    //void CambioEstadoPIm(int numerodelestado)
+    //{
+    //    cambiosdeAnimo[numerodelestado].SetActive(true);
+
+
+        
+
+    //    for (int i = 0; i < cambiosdeAnimo.Length;)
+    //    {
+    //        if (i != numerodelestado)
+    //        {
+    //            cambiosdeAnimo[i].SetActive(false);
+    //        }
+
+    //        i++;
+    //    }
+    //    cambiosdeAnimo[numerodelestado].transform.GetChild(0).gameObject.SetActive(true);
+    //}
 }
