@@ -86,8 +86,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
         
         while (currentTime < targetTime)
         {
-            // Puedes realizar acciones mientras esperas, si es necesario
-            Debug.Log("Esperando...");
+            
             
 
             yield return null;
@@ -97,7 +96,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
         // Restablece el tiempo y realiza acciones después de la espera
         currentTime = 0f;
         
-        Debug.Log("Has Ganado");
+        
     }
 
     #region LacayosPosition
@@ -137,38 +136,65 @@ public class SCR_CalculoTiempo : MonoBehaviour
             GameObject lacayoIntancia = Instantiate(lacayoRandom, spawnpoints[0].transform.position, Quaternion.identity);
             //Instantiate(lacayos_1, spawnpoints[0].transform.position, Quaternion.identity);
             RandomBean(lacayoIntancia);
+            StartCoroutine(MoverLacayo(lacayoIntancia.transform, spawnpoints[1].transform) );
         }
         else
         {
             GameObject lacayoIntancia = Instantiate(lacayoRandom, spawnpoints[1].transform.position, Quaternion.identity);
+            lacayoIntancia.transform.localScale = new Vector3(lacayoIntancia.transform.localScale.x * -1, lacayoIntancia.transform.localScale.y, lacayoIntancia.transform.localScale.z);
             //Instantiate(lacayos_1, spawnpoints[0].transform.position, Quaternion.identity);
             RandomBean(lacayoIntancia);
+            StartCoroutine(MoverLacayo(lacayoIntancia.transform, spawnpoints[0].transform));
         }
         lacayosTime = 0f;
+    }
+
+    IEnumerator MoverLacayo(Transform inicio, Transform dest)
+    {
+        float duracion = 500f;
+        float tiempoPasado = 0f;
+
+        while (tiempoPasado < duracion)
+        {
+            // Calcula la interpolación lineal entre puntoInicial y puntoFinal
+            float t = tiempoPasado / duracion;
+            inicio.gameObject.transform.position = Vector3.Lerp(inicio.position, dest.position, t);
+
+            // Actualiza el tiempo pasado
+            tiempoPasado += Time.deltaTime;
+
+            // Espera hasta el siguiente frame
+            yield return null;
+        }
+
+        // Asegúrate de que el objeto esté exactamente en la posición final
+        
+    
     }
     #endregion
 
     #region BeanSpawn
     void RandomBean(GameObject lacayo)
     {
+        Debug.Log("LLegue a las habas");
         int ramdomBean = Random.Range(0, 100);
 
         Transform handlerbean = lacayo.GetComponentInChildren<Transform>();
         if(ramdomBean < sceneManager.probalidadSpawnbeanLisa)
         {
-            Instantiate(beanLisa, handlerbean.transform.position, Quaternion.identity);
+            Instantiate(beanLisa, handlerbean.transform.position - new Vector3(0,2, 0), Quaternion.identity).transform.SetParent(lacayo.transform.GetChild(0));
         }
         else if (sceneManager.probalidadSpawnbeanLisa <= ramdomBean && ramdomBean < sceneManager.probalidadSpawnbeanRallada)
         {
-            Instantiate(beanRallada, handlerbean.transform.position, Quaternion.identity);
+            Instantiate(beanRallada, handlerbean.transform.position - new Vector3(0, 2, 0), Quaternion.identity).transform.SetParent(lacayo.transform.GetChild(0));
         }
         else if (sceneManager.probalidadSpawnbeanRallada <= ramdomBean && ramdomBean < sceneManager.probalidadSpawnbeanPuntos)
         {
-            Instantiate(beanPuntos, handlerbean.transform.position, Quaternion.identity);
+            Instantiate(beanPuntos, handlerbean.transform.position - new Vector3(0, 2, 0), Quaternion.identity).transform.SetParent(lacayo.transform.GetChild(0));
         }
-        if (sceneManager.probalidadSpawnbeanPuntos <= ramdomBean && ramdomBean < sceneManager.probalidadSpawnbeanEstrellada)
+        if (sceneManager.probalidadSpawnbeanPuntos <= ramdomBean && ramdomBean <= sceneManager.probalidadSpawnbeanEstrellada)
         {
-            Instantiate(beanEstrellada, handlerbean.transform.position, Quaternion.identity);
+            Instantiate(beanEstrellada, handlerbean.transform.position - new Vector3(0, 2, 0), Quaternion.identity).transform.SetParent(lacayo.transform.GetChild(0));
         }
 
     }

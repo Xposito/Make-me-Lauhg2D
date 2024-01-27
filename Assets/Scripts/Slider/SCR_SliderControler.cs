@@ -18,6 +18,8 @@ public class SCR_SliderControler : MonoBehaviour
 
     public bool stopTimer = false; //Para el Slide
 
+    public GameObject[] cambiosdeAnimo;
+
     #endregion
 
     void Start()
@@ -39,23 +41,83 @@ public class SCR_SliderControler : MonoBehaviour
 
         if(timer <= slider.maxValue * (20 / 100))
         {
+            cambiosdeAnimo[0].SetActive(true);
+
+            for (int i = 0; i < cambiosdeAnimo.Length;)
+            {
+                
+                if (i != 0f)
+                {
+                    cambiosdeAnimo[i].SetActive(false);
+                }
+                i++;
+
+            }
             Debug.Log("menos del 20%");
         }
         if (timer <= slider.maxValue * 40 / 100 && timer > slider.maxValue * 20 / 100)
         {
+            cambiosdeAnimo[1].SetActive(true);
+            for (int i = 0; i < cambiosdeAnimo.Length;)
+            {
+                
+                
+                if (i != 1f)
+                {
+                    cambiosdeAnimo[i].SetActive(false);
+                }
+                i++;
+
+            }
             Debug.Log("menos del 40%");
         }   
         if (timer <= slider.maxValue * 60 / 100 && timer > slider.maxValue * 40 / 100)
         {
+            cambiosdeAnimo[2].SetActive(true);
+            for (int i = 0; i < cambiosdeAnimo.Length;)
+            {
+                
+                
+                if (i != 2f)
+                {
+                    cambiosdeAnimo[i].SetActive(false);
+                }
+                i++;
+
+
+            }
             Debug.Log("menos del 60%");
         }
         if (timer <= slider.maxValue * 80 / 100 && timer > slider.maxValue * 60 / 100)
         {
+            cambiosdeAnimo[3].SetActive(true);
+            for (int i = 0; i < cambiosdeAnimo.Length;)
+            {
+                
+                
+                if (i != 3f)
+                {
+                    cambiosdeAnimo[i].SetActive(false);
+                }
+                i++;
+
+            }
             Debug.Log("menos del 80%");
         }
         if (timer <= slider.maxValue * 100 / 100 && timer > slider.maxValue * 80 / 100)
         {
-            
+            cambiosdeAnimo[4].SetActive(true);
+            for (int i = 0; i < cambiosdeAnimo.Length;)
+            {
+                
+                
+                if(i != 4f)
+                {
+                    cambiosdeAnimo[i].SetActive(false);
+                }
+
+                i++;
+            }
             Debug.Log("menos del 100%");
         }
 
