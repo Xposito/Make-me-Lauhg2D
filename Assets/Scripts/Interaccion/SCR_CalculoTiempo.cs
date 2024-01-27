@@ -5,17 +5,30 @@ using UnityEngine.SceneManagement;
 
 public class SCR_CalculoTiempo : MonoBehaviour
 {
+    #region Variables
+    [Header("Managers")]
     SCR_InteractManager interactManager;
     SCO_SceneManager sceneManager;
+
+    [Header("Lacayos")]
     public GameObject[] spawnpoints;
     public GameObject lacayos_1;
     public GameObject lacayos_2;
     public GameObject lacayos_3;
     public GameObject lacayos_4;
-
+    
+    [Header("Sombreros")]
     public GameObject[] spawnpointsombreros;
     public GameObject sombrero;
 
+    [Header("Chistes")]
+    public GameObject[] spawnpointChistes;
+    public GameObject[] chistesPobreza;
+    public GameObject[] chistesAnimales;
+    public GameObject[] chistesAmor;
+    public GameObject[] chistesRopa;
+
+    [Header("Bean")]
     public GameObject beanLisa;
     public GameObject beanRallada;
     public GameObject beanPuntos;
@@ -23,11 +36,14 @@ public class SCR_CalculoTiempo : MonoBehaviour
 
     public bool Iswaiting = false;
 
-    private float currentTime = 0f;
-    private float lacayosTime = 0f;
-    private float sombreroTime = 0f;
+    //Floats que miden los tiempos
+
+    private float currentTime = 0f; //Tiempo que corre para el nivel
+    private float lacayosTime = 0f; //Tiempo que corre para el spawn de lacayos
+    private float sombreroTime = 0f; //Tiempo que corre para el spawn de sombreros
+    private float chistesTime = 0f; //Tiempo que que corre para el spawn de chistes
     private float targetTime; // Tiempo deseado de espera en segundos
-    
+    #endregion
 
     private void Start()
     {
@@ -37,12 +53,14 @@ public class SCR_CalculoTiempo : MonoBehaviour
         StartCoroutine(CustomWait());
         //Restart();
     }
+
     void Update()
     {
         // Lógica personalizada de tiempo
         currentTime += Time.deltaTime;
         lacayosTime += Time.deltaTime;
         sombreroTime += Time.deltaTime;
+        chistesTime += Time.deltaTime;
 
         // Comienza la espera cuando se presiona la tecla 'Espacio'
         if(lacayosTime >= sceneManager.tiempoSpawnLacayos)
@@ -53,11 +71,15 @@ public class SCR_CalculoTiempo : MonoBehaviour
         {
             ElegirSpawnSombrero();
         }
+        if(chistesTime >= sceneManager.tiempoSpawnChistes)
+        {
+            ElegirTipoChiste();
+        }
 
 
     }
 
-    // Coroutine personalizada para la espera
+    //Lleva el tiempo que tienes que sobrevivir
     IEnumerator CustomWait()
     {
         
@@ -78,7 +100,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
         Debug.Log("Has Ganado");
     }
 
-
+    #region LacayosPosition
     void ElegirLacayo()
     {
         int randomlacayo = Random.Range(0, 100);
@@ -86,22 +108,47 @@ public class SCR_CalculoTiempo : MonoBehaviour
         
         if (randomlacayo < sceneManager.probabilidadLacayo1)
         {
-            RandamoPosition(lacayos_1);
+            RandomPosition(lacayos_1);
         }
         else if (sceneManager.probabilidadLacayo1 <= randomlacayo && randomlacayo < sceneManager.probabilidadLacayo2)
         {
-            RandamoPosition(lacayos_2);
+            RandomPosition(lacayos_2);
         }
         else if (sceneManager.probabilidadLacayo2 <= randomlacayo && randomlacayo < sceneManager.probabilidadLacayo3)
         {
-            RandamoPosition(lacayos_3);
+            RandomPosition(lacayos_3);
         }
         if (sceneManager.probabilidadLacayo3 <= randomlacayo && randomlacayo < sceneManager.probabilidadLacayo4)
         {
-            RandamoPosition(lacayos_4);
+            RandomPosition(lacayos_4);
         }
 
     }
+    void RandomPosition(GameObject lacayoRandom)
+    {
+        //StopCoroutine(SpawnLacayos());
+        //StartCoroutine(SpawnLacayos());
+        int randomNumber = Random.Range(0, 100);
+
+        Debug.Log(randomNumber);
+
+        if (randomNumber <= 50)
+        {
+            GameObject lacayoIntancia = Instantiate(lacayoRandom, spawnpoints[0].transform.position, Quaternion.identity);
+            //Instantiate(lacayos_1, spawnpoints[0].transform.position, Quaternion.identity);
+            RandomBean(lacayoIntancia);
+        }
+        else
+        {
+            GameObject lacayoIntancia = Instantiate(lacayoRandom, spawnpoints[1].transform.position, Quaternion.identity);
+            //Instantiate(lacayos_1, spawnpoints[0].transform.position, Quaternion.identity);
+            RandomBean(lacayoIntancia);
+        }
+        lacayosTime = 0f;
+    }
+    #endregion
+
+    #region BeanSpawn
     void RandomBean(GameObject lacayo)
     {
         int ramdomBean = Random.Range(0, 100);
@@ -125,30 +172,9 @@ public class SCR_CalculoTiempo : MonoBehaviour
         }
 
     }
+    #endregion
 
-    void RandamoPosition(GameObject lacayoRandom)
-    {
-        //StopCoroutine(SpawnLacayos());
-        //StartCoroutine(SpawnLacayos());
-        int randomNumber = Random.Range(0, 100);
-
-        Debug.Log(randomNumber);
-
-        if (randomNumber <= 50)
-        {
-            GameObject lacayoIntancia = Instantiate(lacayoRandom, spawnpoints[0].transform.position, Quaternion.identity); 
-            //Instantiate(lacayos_1, spawnpoints[0].transform.position, Quaternion.identity);
-            RandomBean(lacayoIntancia);
-        }
-        else
-        {
-            GameObject lacayoIntancia = Instantiate(lacayoRandom, spawnpoints[1].transform.position, Quaternion.identity);
-            //Instantiate(lacayos_1, spawnpoints[0].transform.position, Quaternion.identity);
-            RandomBean(lacayoIntancia);
-        }
-        lacayosTime = 0f;
-    }
-
+    #region SpawSombrero
     void ElegirSpawnSombrero()
     {
         sceneManager.IsSombreroInScene = true;
@@ -176,5 +202,89 @@ public class SCR_CalculoTiempo : MonoBehaviour
 
         sombreroTime = 0;
     }
+    #endregion
+
+    #region Chistes
+    void ElegirTipoChiste()
+    {
+        int randomlacayo = Random.Range(0, 100);
+
+
+        if (randomlacayo < sceneManager.probabilidadSpawnChistePobreza)
+        {
+            GameObject chiste;
+            chiste = ChistePobreza();
+            Instantiate(chiste, RandomSpawnChistes().position, Quaternion.identity);
+        }
+        else if (sceneManager.probabilidadSpawnChistePobreza <= randomlacayo && randomlacayo < sceneManager.probabilidadSpawnChisteAnimales)
+        {
+            GameObject chiste;
+            chiste = ChisteAnimales();
+            Instantiate(chiste, RandomSpawnChistes().position, Quaternion.identity);
+        }
+        else if (sceneManager.probabilidadSpawnChisteAnimales <= randomlacayo && randomlacayo < sceneManager.probabilidadSpawnChisteAmor)
+        {
+            GameObject chiste;
+            chiste = ChisteAmor();
+            Instantiate(chiste, RandomSpawnChistes().position, Quaternion.identity);
+        }
+        if (sceneManager.probabilidadSpawnChisteAmor <= randomlacayo && randomlacayo < sceneManager.probabilidadSpawnChisteRopa)
+        {
+            GameObject chiste;
+            chiste = ChisteRopa();
+            Instantiate(chiste, RandomSpawnChistes().position, Quaternion.identity);
+        }
+        chistesTime = 0;
+
+    }
+
+    public Transform RandomSpawnChistes()
+    {
+        int spawnRandom = Random.Range(0, 5);
+
+        return spawnpointChistes[spawnRandom].transform;
+    }
+
+    public GameObject ChistePobreza()
+    {
+        int randomChiste = Random.Range(0, 5);
+        GameObject chiste;
+
+        chiste = chistesPobreza[randomChiste];
+
+        return chiste;
+
+    }
+    public GameObject ChisteAnimales()
+    {
+        int randomChiste = Random.Range(0, 5);
+        GameObject chiste;
+
+        chiste = chistesAnimales[randomChiste];
+
+        return chiste;
+
+    }
+    public GameObject ChisteAmor()
+    {
+        int randomChiste = Random.Range(0, 5);
+        GameObject chiste;
+
+        chiste = chistesAmor[randomChiste];
+
+        return chiste;
+
+    }
+    public GameObject ChisteRopa()
+    {
+        int randomChiste = Random.Range(0, 5);
+        GameObject chiste;
+
+        chiste = chistesRopa[randomChiste];
+
+        return chiste;
+
+    }
+    #endregion C
 
 }

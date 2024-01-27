@@ -139,6 +139,34 @@ public class SCR_InteractManager : MonoBehaviour
 
 
         }
+        if (hit.collider.gameObject.layer == 8)
+        {
+
+            if (hit.collider.gameObject.GetComponent<SCR_Holder>().chistes_Data.ID == 0 && Input.GetMouseButtonDown(0))
+            {
+                sliderControler.Chistes(sceneManager.chistesPobreza, hit.collider.gameObject.GetComponent<SCR_Holder>().chistes_Data);
+                scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().chistes_Data.scaleTime;
+                Destroy(hit.collider.gameObject);
+            }
+            if (hit.collider.gameObject.GetComponent<SCR_Holder>().chistes_Data.ID == 1 && Input.GetMouseButtonDown(0))
+            {
+                sliderControler.Chistes(sceneManager.chistesAnimales, hit.collider.gameObject.GetComponent<SCR_Holder>().chistes_Data);
+                scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().chistes_Data.scaleTime;
+                Destroy(hit.collider.gameObject);
+            }
+            if (hit.collider.gameObject.GetComponent<SCR_Holder>().chistes_Data.ID == 2 && Input.GetMouseButtonDown(0))
+            {
+                sliderControler.Chistes(sceneManager.chistesAmor, hit.collider.gameObject.GetComponent<SCR_Holder>().chistes_Data);
+                scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().chistes_Data.scaleTime;
+                Destroy(hit.collider.gameObject);
+            }
+            if (hit.collider.gameObject.GetComponent<SCR_Holder>().chistes_Data.ID == 3 && Input.GetMouseButtonDown(0))
+            {
+                sliderControler.Chistes(sceneManager.chistesRopa, hit.collider.gameObject.GetComponent<SCR_Holder>().chistes_Data);
+                scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().chistes_Data.scaleTime;
+                Destroy(hit.collider.gameObject);
+            }
+        }
 
 
 

@@ -18,7 +18,8 @@ public class SCR_SliderControler : MonoBehaviour
     public bool stopTimer = false;
 
     void Start()
-    {
+    {   
+        sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
         timer = sceneManager.timer;
         slider.maxValue = sceneManager.timer;
         slider.value = sceneManager.timer;
@@ -162,6 +163,18 @@ public class SCR_SliderControler : MonoBehaviour
         else
         {
             timer = timer - bean_Data.valorSlide;
+        }
+
+    }
+    public void Chistes(bool requerido, SCO_Chistes chistes_Data)
+    {
+        if (requerido)
+        {
+            timer = timer + chistes_Data.valorSlide;
+        }
+        else
+        {
+            timer = timer - chistes_Data.valorSlide;
         }
 
     }
