@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f474cbdfdaa8f0d41a0d2f8b44c05cda, type: 3}
   m_Name: ChistesAmor
   m_EditorClassIdentifier: 
-  ID: 0
-  valorSlide: 0
-  scaleTime: 0
+  ID: 2
+  valorSlide: 3
+  scaleTime: 1
