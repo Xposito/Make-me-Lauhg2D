@@ -22,10 +22,13 @@ public class SCO_SceneManager : ScriptableObject
     public bool beanPuntos;
     public bool beanEstrellas;
 
+    public bool IsSombreroInScene;
+
     [Header("NivelCaracterísticas")]
     public float tiempoNivel;
     public float tiempoSpawnLacayos;
     public float tiempoSpawnChistes;
+    public float tiempoSpawnSombrero;
     public float probalidadSpawnbeanLisa;
     public float probalidadSpawnbeanRallada;
     public float probalidadSpawnbeanPuntos;
@@ -34,6 +37,11 @@ public class SCO_SceneManager : ScriptableObject
     public float probabilidadLacayo2;
     public float probabilidadLacayo3;
     public float probabilidadLacayo4;
+    public float probabilidadSpawnSombrero;
+    public float probabilidadSpawnSombrero1;
+    public float probabilidadSpawnSombrero2;
+    public float probabilidadSpawnSombrero3;
+    
 
 
     

@@ -52,6 +52,11 @@ public class SCR_SliderControler : MonoBehaviour
             
             Debug.Log("menos del 100%");
         }
+
+        if(stopTimer)
+        {
+            //Volver al inicio.
+        }
     }
 
     public void StartTimer()

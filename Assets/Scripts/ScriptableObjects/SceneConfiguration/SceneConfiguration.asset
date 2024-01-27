@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SceneConfiguration
   m_EditorClassIdentifier: 
   timer: 10
-  timerSpeed: 1
+  timerSpeed: 0.8
   patito: 0
   cajitaMusica: 1
   confeti: 1
@@ -21,9 +21,11 @@ MonoBehaviour:
   beanRallada: 1
   beanPuntos: 1
   beanEstrellas: 1
-  tiempoNivel: 120
+  IsSombreroInScene: 0
+  tiempoNivel: 60
   tiempoSpawnLacayos: 3
   tiempoSpawnChistes: 0
+  tiempoSpawnSombrero: 25
   probalidadSpawnbeanLisa: 25
   probalidadSpawnbeanRallada: 50
   probalidadSpawnbeanPuntos: 75
@@ -32,3 +34,7 @@ MonoBehaviour:
   probabilidadLacayo2: 50
   probabilidadLacayo3: 75
   probabilidadLacayo4: 100
+  probabilidadSpawnSombrero: 25
+  probabilidadSpawnSombrero1: 50
+  probabilidadSpawnSombrero2: 75
+  probabilidadSpawnSombrero3: 100

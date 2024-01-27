@@ -7,7 +7,8 @@ public class SCR_InteractManager : MonoBehaviour
 {
     SCO_SceneManager sceneManager;
     SCR_SliderControler sliderControler;
-    public SCO_Object_Configuration confeti;
+    public SCO_Object_Configuration confeti_SCO;
+    public SCO_Object_Configuration sombrero_SCO;
 
     float scaleTime;
 
@@ -16,20 +17,30 @@ public class SCR_InteractManager : MonoBehaviour
         sliderControler = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_SliderControler>();
         sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
         sceneManager.timerSpeed = 1.0f;
-        confeti.Used = true;
+        sceneManager.patito = true;
+        sceneManager.IsSombreroInScene = false;
+        confeti_SCO.Used = true;
 
         scaleTime = sceneManager.TimerSpeed;
     }
 
     void Update()
     {
+        
+
         sceneManager.timerSpeed = scaleTime;
         ObjetosInteractuables();
         
     }
 
+    public void SombreroEnEscena()
+    {
+        if (sceneManager.IsSombreroInScene)
+        {
+            scaleTime = sombrero_SCO.scaleTime;
+        }
+    }
 
-    
     public void ObjetosInteractuables()
     {
         
@@ -91,6 +102,10 @@ public class SCR_InteractManager : MonoBehaviour
             //Gorro de bufón
             if(hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.ID == 3 && Input.GetMouseButtonDown(0))
             {
+                
+                sceneManager.IsSombreroInScene = false;
+                scaleTime = 1f;
+                Destroy(hit.collider.gameObject);
                 Debug.Log("Se mantiene" + hit.collider.gameObject.name);
             }
                 
@@ -130,4 +145,6 @@ public class SCR_InteractManager : MonoBehaviour
     }
 
    
+
+
 }

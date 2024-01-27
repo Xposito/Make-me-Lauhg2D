@@ -5,12 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class SCR_CalculoTiempo : MonoBehaviour
 {
+    SCR_InteractManager interactManager;
     SCO_SceneManager sceneManager;
     public GameObject[] spawnpoints;
     public GameObject lacayos_1;
     public GameObject lacayos_2;
     public GameObject lacayos_3;
     public GameObject lacayos_4;
+
+    public GameObject[] spawnpointsombreros;
+    public GameObject sombrero;
 
     public GameObject beanLisa;
     public GameObject beanRallada;
@@ -21,11 +25,13 @@ public class SCR_CalculoTiempo : MonoBehaviour
 
     private float currentTime = 0f;
     private float lacayosTime = 0f;
+    private float sombreroTime = 0f;
     private float targetTime; // Tiempo deseado de espera en segundos
     
 
     private void Start()
     {
+        interactManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_InteractManager>();
         sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
         targetTime = sceneManager.tiempoNivel;
         StartCoroutine(CustomWait());
@@ -36,14 +42,19 @@ public class SCR_CalculoTiempo : MonoBehaviour
         // Lógica personalizada de tiempo
         currentTime += Time.deltaTime;
         lacayosTime += Time.deltaTime;
+        sombreroTime += Time.deltaTime;
 
         // Comienza la espera cuando se presiona la tecla 'Espacio'
         if(lacayosTime >= sceneManager.tiempoSpawnLacayos)
         {
             ElegirLacayo();
         }
-        
-        
+        if (sombreroTime >= sceneManager.tiempoSpawnSombrero && !sceneManager.IsSombreroInScene)
+        {
+            ElegirSpawnSombrero();
+        }
+
+
     }
 
     // Coroutine personalizada para la espera
@@ -64,7 +75,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
         // Restablece el tiempo y realiza acciones después de la espera
         currentTime = 0f;
         
-        Debug.Log("Espera completada");
+        Debug.Log("Has Ganado");
     }
 
 
@@ -137,5 +148,33 @@ public class SCR_CalculoTiempo : MonoBehaviour
         }
         lacayosTime = 0f;
     }
-    
+
+    void ElegirSpawnSombrero()
+    {
+        sceneManager.IsSombreroInScene = true;
+        interactManager.SombreroEnEscena();
+
+        int randomsombrerospawn = Random.Range(0, 100);
+
+
+        if (randomsombrerospawn < sceneManager.probabilidadSpawnSombrero)
+        {
+            Instantiate(sombrero, spawnpointsombreros[0].transform.position, Quaternion.identity);
+        }
+        else if (sceneManager.probabilidadSpawnSombrero <= randomsombrerospawn && randomsombrerospawn < sceneManager.probabilidadSpawnSombrero1)
+        {
+            Instantiate(sombrero, spawnpointsombreros[1].transform.position, Quaternion.identity);
+        }
+        else if (sceneManager.probabilidadSpawnSombrero1 <= randomsombrerospawn && randomsombrerospawn < sceneManager.probabilidadSpawnSombrero2)
+        {
+            Instantiate(sombrero, spawnpointsombreros[2].transform.position, Quaternion.identity);
+        }
+        if (sceneManager.probabilidadSpawnSombrero2 <= randomsombrerospawn && randomsombrerospawn < sceneManager.probabilidadSpawnSombrero3)
+        {
+            Instantiate(sombrero, spawnpointsombreros[3].transform.position, Quaternion.identity);
+        }
+
+        sombreroTime = 0;
+    }
+
 }
