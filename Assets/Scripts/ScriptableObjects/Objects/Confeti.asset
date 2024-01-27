@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f81239b6851180446aab93b82a8e0163, type: 3}
   m_Name: Confeti
   m_EditorClassIdentifier: 
-  ID: 1
-  ValorSlide: 0
+  ID: 2
+  valorSlide: 4
+  scaleTime: 1.5
   Used: 0

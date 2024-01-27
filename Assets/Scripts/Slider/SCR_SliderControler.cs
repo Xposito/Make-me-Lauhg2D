@@ -8,7 +8,8 @@ public class SCR_SliderControler : MonoBehaviour
     public Slider slider;
     public Image fillImage;
 
-    
+
+    int clicks = 0;
     float valor;
     float timer;
 
@@ -70,11 +71,69 @@ public class SCR_SliderControler : MonoBehaviour
 
     public void PatitodeGoma(SCO_Object_Configuration object_Configuration)
     {
-        timer = timer + object_Configuration.ValorSlide;
+        if (sceneManager.patito)
+        {
+            
+            timer = timer + object_Configuration.valorSlide;
+            
+            clicks++;
+            if(clicks >= 1)
+            {
+                StartCoroutine(tiempodePatito());
+            }
+            if (clicks == 10)
+            {
+                StopCoroutine(tiempodePatito());
+                sceneManager.patito = false;
+                StartCoroutine(tiempodePatito());
+            }
+        }
+        else
+        {
+            timer = timer - object_Configuration.valorSlide;
+        }
+
+        
 
 
     }
 
+    IEnumerator tiempodePatito()
+    {
+        yield return new WaitForSeconds(10);
 
+        clicks = 0;
+        sceneManager.patito = true;
+    }
+
+
+
+    public void Confeti(SCO_Object_Configuration object_Configuration)
+    {
+        if (sceneManager.confeti)
+        {
+            timer = timer + object_Configuration.valorSlide;
+        }
+        else
+        {
+            timer = timer - object_Configuration.valorSlide;
+        }
+        
+
+
+    }
+
+    public void Bean(bool requerido, SCO_Bean_Data bean_Data)
+    {
+        if (requerido)
+        {
+            timer = timer + bean_Data.valorSlide;
+        }
+        else
+        {
+            timer = timer - bean_Data.valorSlide;
+        }
+
+    }
 
 }

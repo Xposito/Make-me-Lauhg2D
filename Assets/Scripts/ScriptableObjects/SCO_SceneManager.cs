@@ -13,6 +13,17 @@ public class SCO_SceneManager : ScriptableObject
     //Este numero NO puede ser menor 0 o menor.
     public float timerSpeed;
 
+    public bool patito;
+    public bool cajitaMusica;
+    public bool confeti;
+
+    public bool beanLisa;
+    public bool beanRallada;
+    public bool beanPuntos;
+    public bool beanEstrellas;
+    
+    
+
 
 
 

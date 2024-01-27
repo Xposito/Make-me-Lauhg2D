@@ -7,6 +7,7 @@ public class SCO_Object_Configuration : ScriptableObject
 {
     public int ID;
 
-    public float ValorSlide;
+    public float valorSlide;
+    public float scaleTime;
     public bool Used;
 }

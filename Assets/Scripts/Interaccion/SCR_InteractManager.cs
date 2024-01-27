@@ -5,22 +5,31 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class SCR_InteractManager : MonoBehaviour
 {
-
+    SCO_SceneManager sceneManager;
     SCR_SliderControler sliderControler;
+    public SCO_Object_Configuration confeti;
+
+    float scaleTime;
 
     private void Start()
     {
         sliderControler = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_SliderControler>();
+        sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
+        sceneManager.timerSpeed = 1.0f;
+        confeti.Used = true;
+
+        scaleTime = sceneManager.TimerSpeed;
     }
 
     void Update()
     {
+        sceneManager.timerSpeed = scaleTime;
         ObjetosInteractuables();
         
     }
 
 
-
+    
     public void ObjetosInteractuables()
     {
         
@@ -29,47 +38,96 @@ public class SCR_InteractManager : MonoBehaviour
 
             // Lanza un rayo desde la posición del ratón en dirección Vector2.zero (hacia el centro)
         RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
-                       
+
+        //Interacción con objetos               
         if (hit.collider.gameObject.layer == 6)
         {
+            //Patito De Goma
             if(hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.ID == 0 && Input.GetMouseButtonDown(0))
             {
                 sliderControler.PatitodeGoma(hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration);
-
-
-
-                             // Aquí puedes realizar acciones relacionadas con el objeto golpeado
+                         // Aquí puedes realizar acciones relacionadas con el objeto golpeado
                             Debug.Log("Se ha golpeado un objeto: " + hit.collider.gameObject.name);
             }
 
-            if(hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.ID == 1 && Input.GetMouseButton(0))
+
+            //Cajita de Musica
+            if(hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.ID == 1 && Input.GetMouseButton(0) && sceneManager.cajitaMusica)
             {
-                float scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.ValorSlide;
-                sliderControler.sceneManager.timerSpeed = scaleTime;
+                float scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.scaleTime;
+                sceneManager.timerSpeed = scaleTime;
                             Debug.Log("Se mantiene" + hit.collider.gameObject.name);
                         
             }
-            else 
+            else if(hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.ID == 1 && Input.GetMouseButton(0) && !sceneManager.cajitaMusica)
             {
-                sliderControler.sceneManager.timerSpeed = 1f;
+                float scaleTime = 1.5f;
+                sceneManager.timerSpeed = scaleTime;
             }
+           
+
+
+
+
+
+
+            //CONFETI
             if(hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.ID == 2 && Input.GetMouseButtonDown(0))
             {
+                if (hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.Used)
+                {
+                    sliderControler.Confeti(hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration);
+                    scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.scaleTime;
+                    hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.Used = false;
+                }
+                
+
                 Debug.Log("Se mantiene" + hit.collider.gameObject.name);
             }
+            
+
+
+
+            //Gorro de bufón
             if(hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.ID == 3 && Input.GetMouseButtonDown(0))
             {
                 Debug.Log("Se mantiene" + hit.collider.gameObject.name);
             }
                 
         }
-             
-
-            // Comprueba si el rayo golpea un objeto
-            
-        
-
+        if (hit.collider.gameObject.layer == 7)
+        {
            
+
+            if(hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.ID == 0 && Input.GetMouseButtonDown(0))
+            {
+                sliderControler.Bean(sceneManager.beanLisa, hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data);
+                scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.scaleTime;
+            }
+            if (hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.ID == 1 && Input.GetMouseButtonDown(0))
+            {
+                sliderControler.Bean(sceneManager.beanRallada, hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data);
+                scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.scaleTime;
+            }
+            if (hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.ID == 2 && Input.GetMouseButtonDown(0)) 
+            {
+                sliderControler.Bean(sceneManager.beanPuntos, hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data);
+                scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.scaleTime;
+            }
+            if (hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.ID == 3 && Input.GetMouseButtonDown(0))
+            {
+                sliderControler.Bean(sceneManager.beanEstrellas, hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data);
+                scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.scaleTime;
+            }
+
+
+
+
+        }
+
+
+
     }
 
+   
 }

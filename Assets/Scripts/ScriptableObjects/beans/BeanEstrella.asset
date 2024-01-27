@@ -9,15 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bec77c45cc9603347b2da5e31a555f5b, type: 3}
-  m_Name: SceneConfiguration
+  m_Script: {fileID: 11500000, guid: 2cb03b7c32193d949b6f761ed7ec4f58, type: 3}
+  m_Name: BeanEstrella
   m_EditorClassIdentifier: 
-  timer: 60
-  timerSpeed: 1
-  patito: 1
-  cajitaMusica: 1
-  confeti: 1
-  beanLisa: 1
-  beanRallada: 1
-  beanPuntos: 1
-  beanEstrellas: 1
+  ID: 3
+  valorSlide: 2
+  scaleTime: 0.8

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f81239b6851180446aab93b82a8e0163, type: 3}
   m_Name: CajitaMusica
   m_EditorClassIdentifier: 
-  ID: 2
-  ValorSlide: 0
+  ID: 1
+  valorSlide: 1
+  scaleTime: 0.6
   Used: 0
