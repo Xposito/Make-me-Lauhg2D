@@ -5,12 +5,15 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class SCR_InteractManager : MonoBehaviour
 {
+#region Variables
     SCO_SceneManager sceneManager;
     SCR_SliderControler sliderControler;
     public SCO_Object_Configuration confeti_SCO;
     public SCO_Object_Configuration sombrero_SCO;
 
-    float scaleTime;
+    float scaleTime; //Velocidad del Slide
+
+    #endregion
 
     private void Start()
     {
@@ -33,6 +36,7 @@ public class SCR_InteractManager : MonoBehaviour
         
     }
 
+    //Para saber cuando está el sombrero
     public void SombreroEnEscena()
     {
         if (sceneManager.IsSombreroInScene)
@@ -41,6 +45,8 @@ public class SCR_InteractManager : MonoBehaviour
         }
     }
 
+
+    //Engloba todos los objetos con los que se interactúan
     public void ObjetosInteractuables()
     {
         
@@ -110,6 +116,7 @@ public class SCR_InteractManager : MonoBehaviour
             }
                 
         }
+        //Interacción con beans
         if (hit.collider.gameObject.layer == 7)
         {
            
@@ -139,6 +146,8 @@ public class SCR_InteractManager : MonoBehaviour
 
 
         }
+
+        //Interacción con Chistes
         if (hit.collider.gameObject.layer == 8)
         {
 

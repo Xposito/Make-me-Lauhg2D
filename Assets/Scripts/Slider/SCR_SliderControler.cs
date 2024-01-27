@@ -5,17 +5,20 @@ using UnityEngine.UI;
 
 public class SCR_SliderControler : MonoBehaviour
 {
-    public Slider slider;
-    public Image fillImage;
+    #region Variables
+    public Slider slider; //Slider del tiempo
+    public Image fillImage; //relleno del slider
 
 
-    int clicks = 0;
-    float valor;
-    public float timer;
+    int clicks = 0; //lleva las veces que pulsas al patito
+    float valor; //Se encarga de porcentuar el color
+    public float timer; //Tiempo que dura la slide sin ser tocada en acabar
 
-    public SCO_SceneManager sceneManager;
+    public SCO_SceneManager sceneManager; //Manager de Características
 
-    public bool stopTimer = false;
+    public bool stopTimer = false; //Para el Slide
+
+    #endregion
 
     void Start()
     {   
@@ -31,6 +34,8 @@ public class SCR_SliderControler : MonoBehaviour
     {
         valor = slider.value / slider.maxValue;
         UpdateColor(valor);
+
+        //Los if diferencian los tramos de muecas
 
         if(timer <= slider.maxValue * (20 / 100))
         {
@@ -60,11 +65,16 @@ public class SCR_SliderControler : MonoBehaviour
         }
     }
 
+
+    #region Slider
+
+    //Inicia la corrutiana
     public void StartTimer()
     {
         StartCoroutine(StartTheTimerTicker());
     }
 
+    //Hace que el slider vaya bajando
     IEnumerator StartTheTimerTicker()
     {
         while (stopTimer == false)
@@ -99,7 +109,10 @@ public class SCR_SliderControler : MonoBehaviour
         // Asigna el nuevo color al componente de imagen del Fill
         fillImage.color = newColor;
     }
+    #endregion
 
+    #region Patito de Goma
+    //Lo que ocurre al clickar el patito de Goma
     public void PatitodeGoma(SCO_Object_Configuration object_Configuration)
     {
         if (sceneManager.patito)
@@ -137,8 +150,9 @@ public class SCR_SliderControler : MonoBehaviour
         sceneManager.patito = true;
     }
 
+    #endregion
 
-
+    //Lo que ocurre al tocar el confeti
     public void Confeti(SCO_Object_Configuration object_Configuration)
     {
         if (sceneManager.confeti)
@@ -154,6 +168,7 @@ public class SCR_SliderControler : MonoBehaviour
 
     }
 
+    //Lo que ocurre al tocar las habas
     public void Bean(bool requerido, SCO_Bean_Data bean_Data)
     {
         if (requerido)
@@ -166,6 +181,8 @@ public class SCR_SliderControler : MonoBehaviour
         }
 
     }
+
+    //Lo que ocurre al tocar los Chistes
     public void Chistes(bool requerido, SCO_Chistes chistes_Data)
     {
         if (requerido)
@@ -178,5 +195,5 @@ public class SCR_SliderControler : MonoBehaviour
         }
 
     }
-
+    
 }

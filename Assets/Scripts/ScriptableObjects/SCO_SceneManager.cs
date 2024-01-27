@@ -7,13 +7,14 @@ using UnityEngine;
 public class SCO_SceneManager : ScriptableObject
 {
 
+    //El Script MÁS importante, es el que hace que los días sean diferentes, aquí se añade todo lo que tengan en común todos los niveles
     [Header("Slider")]
-    public float timer;
+    public float timer; //El tiempo  que tarda en acabar si no es tocado
     //Este numero NO puede ser menor 0 o menor.
-    public float timerSpeed;
+    public float timerSpeed; //Varía la velocidad del tiempo
 
     [Header("Requisitos")]
-    public bool patito;
+    public bool patito; 
     public bool cajitaMusica;
     public bool confeti;
 
@@ -58,7 +59,7 @@ public class SCO_SceneManager : ScriptableObject
 
 
 
-
+    //Se utiliza para no cambiar directamente la velocidad es solo de lectura
     public float TimerSpeed
     {
         get { return timerSpeed; }

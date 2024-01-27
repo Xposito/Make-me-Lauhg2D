@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 15
   timerSpeed: 1
-  patito: 0
+  patito: 1
   cajitaMusica: 1
   confeti: 1
   beanLisa: 1
