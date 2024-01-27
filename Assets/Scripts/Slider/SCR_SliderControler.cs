@@ -18,7 +18,11 @@ public class SCR_SliderControler : MonoBehaviour
 
     public bool stopTimer = false; //Para el Slide
 
-    public GameObject[] cambiosdeAnimo;
+    public GameObject cambiosMuyContento;
+    public GameObject cambiosContento;
+    public GameObject cambiosserio;
+    public GameObject cambiosenfadado;
+    public GameObject cambiosMuyEnfadado;
 
     bool muycontento = true;
     bool contento;
@@ -47,68 +51,99 @@ public class SCR_SliderControler : MonoBehaviour
 
         if(timer <= slider.maxValue * (20 / 100))
         {
-            if (muyenfadado)
-            {
-                muyenfadado= false;
-                StartCoroutine(cambioestado(0));
-            }
-            contento =  true;
-            serio = true;
-            enfadado = true;
-            muycontento= true;
-            Debug.Log("menos del 20%");
+            muyenfadado = true;
+
+            //if (muyenfadado)
+            //{
+            //    StopAllCoroutines();
+            //    muyenfadado= false;
+            //    StartCoroutine(cambioestado(0));
+            //}
+            //contento =  true;
+            //serio = true;
+            //enfadado = true;
+            //muycontento= true;
+            //Debug.Log("menos del 20%");
         }
         if (timer <= slider.maxValue * 40 / 100 && timer > slider.maxValue * 20 / 100)
         {
-            if (enfadado)
-            {
-                enfadado = false;
-                StartCoroutine(cambioestado(1));
-            }
-            muycontento = true;
-            serio = true;
-            contento = true;
-            muyenfadado = true;
-            Debug.Log("menos del 40%");
+
+            enfadado = true;
+            //if (enfadado)
+            //{
+            //    StopCoroutine(cambioestado(1));
+            //    enfadado = false;
+            //    StartCoroutine(cambioestado(1));
+            //}
+            //muycontento = true;
+            //serio = true;
+            //contento = true;
+            //muyenfadado = true;
+            //Debug.Log("menos del 40%");
         }   
         if (timer <= slider.maxValue * 60 / 100 && timer > slider.maxValue * 40 / 100)
         {
-            if (serio)
-            {
-                serio = false;
-                StartCoroutine(cambioestado(2));
-            }
-            muycontento =  true;
-            contento = true;
-            enfadado = true;
-            muyenfadado= true;
-            Debug.Log("menos del 60%");
+
+            serio = true;
+            //if (serio)
+            //{
+            //    StopCoroutine(cambioestado(1));
+            //    serio = false;
+            //    StartCoroutine(cambioestado(2));
+            //}
+            //muycontento =  true;
+            //contento = true;
+            //enfadado = true;
+            //muyenfadado= true;
+            //Debug.Log("menos del 60%");
         }
         if (timer <= slider.maxValue * 80 / 100 && timer > slider.maxValue * 60 / 100)
         {
-            if (contento)
-            {
-                contento = false;
-                StartCoroutine(cambioestado(3));
-            }
-            muycontento = true;
-            serio = true;
-            enfadado = true;
-            muyenfadado = true;
-            Debug.Log("menos del 80%");
+            contento = true;
+            //if (contento)
+            //{
+            //    StopCoroutine(cambioestado(1));
+            //    contento = false;
+            //    StartCoroutine(cambioestado(3));
+            //}
+            //muycontento = true;
+            //serio = true;
+            //enfadado = true;
+            //muyenfadado = true;
+            //Debug.Log("menos del 80%");
         }
         if (timer <= slider.maxValue * 100 / 100 && timer > slider.maxValue * 80 / 100)
         {
-            if (muycontento)
-            {
-                muycontento = false;
-                StartCoroutine(cambioestado(4));
-            }
-            contento = true;
-            serio = true;
-            enfadado = true;
-            muyenfadado = true;
-            Debug.Log("menos del 100%");
+            muycontento = true;
+            //if (muycontento)
+            //{
+            //    StopCoroutine(cambioestado(1));
+            //    muycontento = false;
+            //    StartCoroutine(cambioestado(4));
+            //}
+            //contento = true;
+            //serio = true;
+            //enfadado = true;
+            //muyenfadado = true;
+            //Debug.Log("menos del 100%");
+        }
+
+
+        if (muycontento)
+        {
+            contento = false;
+            enfadado = false;
+            serio = false;
+            muyenfadado = false;
+
+            cambiosMuyContento.SetActive(true);
+        }
+        else
+        {
+            cambiosMuyEnfadado.SetActive(false);
+            cambiosenfadado.SetActive(false);
+            cambiosserio.SetActive(false);
+            cambiosContento.SetActive(false);
         }
 
         if(stopTimer)
@@ -247,24 +282,24 @@ public class SCR_SliderControler : MonoBehaviour
         }
 
     }
-    IEnumerator cambioestado(int numerodelestado)
-    {
-        cambiosdeAnimo[numerodelestado].SetActive(true);
+    //IEnumerator cambioestado(int numerodelestado)
+    //{
+    //    cambiosdeAnimo[numerodelestado].SetActive(true);
         
 
-        yield return new WaitForSeconds(1f);
+    //    yield return new WaitForSeconds(1f);
 
-        for (int i = 0; i < cambiosdeAnimo.Length;)
-        {
-            if (i != numerodelestado)
-            {
-                cambiosdeAnimo[i].SetActive(false);
-            }
+    //    for (int i = 0; i < cambiosdeAnimo.Length;)
+    //    {
+    //        if (i != numerodelestado)
+    //        {
+    //            cambiosdeAnimo[i].SetActive(false);
+    //        }
 
-            i++;
-        }
-        cambiosdeAnimo[numerodelestado].transform.GetChild(0).gameObject.SetActive(true);
-    }
+    //        i++;
+    //    }
+    //    cambiosdeAnimo[numerodelestado].transform.GetChild(0).gameObject.SetActive(true);
+    //}
     //void CambioEstadoPIm(int numerodelestado)
     //{
     //    cambiosdeAnimo[numerodelestado].SetActive(true);
