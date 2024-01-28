@@ -240,25 +240,34 @@ public class SCR_CalculoTiempo : MonoBehaviour
         {
             GameObject chiste;
             chiste = ChistePobreza();
-            Instantiate(chiste, RandomSpawnChistes().position, Quaternion.identity);
+            GameObject chistenuevo;
+            chistenuevo = Instantiate(chiste, RandomSpawnChistes().position, Quaternion.identity);
+            StartCoroutine(DestruirChistes(chistenuevo));
+
         }
         else if (sceneManager.probabilidadSpawnChistePobreza <= randomlacayo && randomlacayo < sceneManager.probabilidadSpawnChisteAnimales)
         {
             GameObject chiste;
             chiste = ChisteAnimales();
-            Instantiate(chiste, RandomSpawnChistes().position, Quaternion.identity);
+            GameObject chistenuevo;
+            chistenuevo = Instantiate(chiste, RandomSpawnChistes().position, Quaternion.identity);
+            StartCoroutine(DestruirChistes(chistenuevo));
         }
         else if (sceneManager.probabilidadSpawnChisteAnimales <= randomlacayo && randomlacayo < sceneManager.probabilidadSpawnChisteAmor)
         {
             GameObject chiste;
             chiste = ChisteAmor();
-            Instantiate(chiste, RandomSpawnChistes().position, Quaternion.identity);
+            GameObject chistenuevo;
+            chistenuevo = Instantiate(chiste, RandomSpawnChistes().position, Quaternion.identity);
+            StartCoroutine(DestruirChistes(chistenuevo));
         }
         if (sceneManager.probabilidadSpawnChisteAmor <= randomlacayo && randomlacayo < sceneManager.probabilidadSpawnChisteRopa)
         {
             GameObject chiste;
             chiste = ChisteRopa();
-            Instantiate(chiste, RandomSpawnChistes().position, Quaternion.identity);
+            GameObject chistenuevo;
+            chistenuevo = Instantiate(chiste, RandomSpawnChistes().position, Quaternion.identity);
+            StartCoroutine(DestruirChistes(chistenuevo));
         }
         chistesTime = 0;
 
@@ -311,6 +320,12 @@ public class SCR_CalculoTiempo : MonoBehaviour
         return chiste;
 
     }
-    #endregion C
+
+    IEnumerator DestruirChistes(GameObject chiste)
+    {
+        yield return new WaitForSeconds(3);
+        Destroy(chiste);
+    }
+    #endregion 
 
 }

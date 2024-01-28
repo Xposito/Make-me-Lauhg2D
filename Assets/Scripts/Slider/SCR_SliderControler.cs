@@ -24,7 +24,7 @@ public class SCR_SliderControler : MonoBehaviour
     public GameObject cambiosenfadado;
     public GameObject cambiosMuyEnfadado;
 
-    bool muycontento;
+    bool muycontento =  true;
     bool contento;
     bool serio;
     bool enfadado;
@@ -51,7 +51,21 @@ public class SCR_SliderControler : MonoBehaviour
 
         if(timer <= slider.maxValue * (20 / 100))
         {
-            muyenfadado = true;
+            if (muyenfadado)
+            {
+                muycontento = true;
+                contento = true;
+                enfadado = true;
+                serio = true;
+                muyenfadado = false;
+
+
+                cambiosMuyContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                cambiosMuyEnfadado.GetComponent<SpriteRenderer>().sortingOrder = 5;
+                cambiosenfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                cambiosserio.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                cambiosContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
+            }
 
             //if (muyenfadado)
             //{
@@ -67,139 +81,93 @@ public class SCR_SliderControler : MonoBehaviour
         }
         if (timer <= slider.maxValue * 40 / 100 && timer > slider.maxValue * 20 / 100)
         {
+            if (enfadado)
+            {
+                muycontento = true;
+                contento = true;
+                enfadado = false;
+                serio = true;
+                muyenfadado = true;
 
-            enfadado = true;
-            //if (enfadado)
-            //{
-            //    StopCoroutine(cambioestado(1));
-            //    enfadado = false;
-            //    StartCoroutine(cambioestado(1));
-            //}
-            //muycontento = true;
-            //serio = true;
-            //contento = true;
-            //muyenfadado = true;
+
+                cambiosMuyContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                cambiosMuyEnfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                cambiosenfadado.GetComponent<SpriteRenderer>().sortingOrder = 5;
+                cambiosserio.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                cambiosContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
+            }
+           
+            
             //Debug.Log("menos del 40%");
         }   
         if (timer <= slider.maxValue * 60 / 100 && timer > slider.maxValue * 40 / 100)
         {
 
-            serio = true;
-            //if (serio)
-            //{
-            //    StopCoroutine(cambioestado(1));
-            //    serio = false;
-            //    StartCoroutine(cambioestado(2));
-            //}
-            //muycontento =  true;
-            //contento = true;
-            //enfadado = true;
-            //muyenfadado= true;
+            if (serio)
+            {
+                muycontento = true;
+                contento = true;
+                enfadado = true;
+                serio = false;
+                muyenfadado = true;
+
+
+                cambiosMuyContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                cambiosMuyEnfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                cambiosenfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                cambiosserio.GetComponent<SpriteRenderer>().sortingOrder = 5;
+                cambiosContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
+            }
+            
             //Debug.Log("menos del 60%");
         }
         if (timer <= slider.maxValue * 80 / 100 && timer > slider.maxValue * 60 / 100)
         {
-            contento = true;
-            muycontento = false;
-
             if (contento)
             {
-                muycontento = false;
-                enfadado = false;
-                serio = false;
-                muyenfadado = false;
+                muycontento = true;
+                contento = false;
+                enfadado = true;
+                serio = true;
+                muyenfadado = true;
 
-                cambiosContento.SetActive(true);
-            }
-            else
-            {
-                cambiosMuyEnfadado.SetActive(false);
-                cambiosenfadado.SetActive(false);
-                cambiosserio.SetActive(false);
-                cambiosMuyContento.SetActive(false);
+                
+                cambiosMuyContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                cambiosMuyEnfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                cambiosenfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                cambiosserio.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                cambiosContento.GetComponent<SpriteRenderer>().sortingOrder = 5;
             }
 
-            //if (contento)
-            //{
-            //    StopCoroutine(cambioestado(1));
-            //    contento = false;
-            //    StartCoroutine(cambioestado(3));
-            //}
-            //muycontento = true;
-            //serio = true;
-            //enfadado = true;
-            //muyenfadado = true;
+            
             //Debug.Log("menos del 80%");
         }
         if (timer <= slider.maxValue * 100 / 100 && timer > slider.maxValue * 80 / 100)
         {
           
-            muycontento = true;
+            
 
             if (muycontento)
             {
-                contento = false;
-                enfadado = false;
-                serio = false;
-                muyenfadado = false;
+                muycontento = false;
+                contento = true;
+                enfadado = true;
+                serio = true;
+                muyenfadado = true;
 
-                cambiosMuyContento.SetActive(true);
-            }
-            else
-            {
-                cambiosMuyEnfadado.SetActive(false);
-                cambiosenfadado.SetActive(false);
-                cambiosserio.SetActive(false);
-                cambiosContento.SetActive(false);
-            }
 
-            //if (muycontento)
-            //{
-            //    StopCoroutine(cambioestado(1));
-            //    muycontento = false;
-            //    StartCoroutine(cambioestado(4));
-            //}
-            //contento = true;
-            //serio = true;
-            //enfadado = true;
-            //muyenfadado = true;
+                cambiosMuyContento.GetComponent<SpriteRenderer>().sortingOrder = 5;
+                cambiosMuyEnfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                cambiosenfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                cambiosserio.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                cambiosContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
+            }
+           
+
+            
             //Debug.Log("menos del 100%");
         }
-
-
-        //if (muycontento)
-        //{
-        //    contento = false;
-        //    enfadado = false;
-        //    serio = false;
-        //    muyenfadado = false;
-
-        //    cambiosMuyContento.SetActive(true);
-        //}
-        //else
-        //{
-        //    cambiosMuyEnfadado.SetActive(false);
-        //    cambiosenfadado.SetActive(false);
-        //    cambiosserio.SetActive(false);
-        //    cambiosContento.SetActive(false);
-        //}
-
-        //if (contento)
-        //{
-        //    muycontento = false;
-        //    enfadado = false;
-        //    serio = false;
-        //    muyenfadado = false;
-
-        //    cambiosContento.SetActive(true);
-        //}
-        //else
-        //{
-        //    cambiosMuyEnfadado.SetActive(false);
-        //    cambiosenfadado.SetActive(false);
-        //    cambiosserio.SetActive(false);
-        //    cambiosMuyContento.SetActive(false);
-        //}
+       
 
         if (stopTimer)
         {
