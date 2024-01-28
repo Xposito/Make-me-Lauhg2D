@@ -116,9 +116,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
             sceneManager.stopTime = true;
             sceneManager.startTime = true;
             currentTime = 0;
-            lacayosTime = 0;
-            sombreroTime = 0;
-            chistesTime = 0;
+            
             mainMenu.MenuInicio();
 
             if (sceneManager.primernivel)
