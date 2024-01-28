@@ -15,6 +15,7 @@ public class SCR_SliderControler : MonoBehaviour
     public float timer; //Tiempo que dura la slide sin ser tocada en acabar
 
     public SCO_SceneManager sceneManager; //Manager de Características
+    SCR_AudioManager audioManager;
 
     
 
@@ -25,6 +26,7 @@ public class SCR_SliderControler : MonoBehaviour
     public GameObject cambiosMuyEnfadado;
 
     public GameObject[] objetos;
+    public GameObject confetiusado;
     public GameObject pantallaInicio;
 
     public GameObject pantallaGameOver;
@@ -40,7 +42,7 @@ public class SCR_SliderControler : MonoBehaviour
 
     void Start()
     {
-        
+        audioManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_AudioManager>();
         slider.gameObject.SetActive(false);
         sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
         sceneManager.stopTime = true;
@@ -80,6 +82,7 @@ public class SCR_SliderControler : MonoBehaviour
             {
                 if (muyenfadado)
                 {
+                    audioManager.AudioReyMuyEnfadado();
                     muycontento = true;
                     contento = true;
                     enfadado = true;
@@ -101,6 +104,7 @@ public class SCR_SliderControler : MonoBehaviour
             {
                 if (enfadado)
                 {
+                    audioManager.AudioReyEnfadado();
                     muycontento = true;
                     contento = true;
                     enfadado = false;
@@ -123,6 +127,7 @@ public class SCR_SliderControler : MonoBehaviour
 
                 if (serio)
                 {
+                    audioManager.AudioReySerio();
                     muycontento = true;
                     contento = true;
                     enfadado = true;
@@ -143,6 +148,7 @@ public class SCR_SliderControler : MonoBehaviour
             {
                 if (contento)
                 {
+                    audioManager.AudioReyContento();
                     muycontento = true;
                     contento = false;
                     enfadado = true;
@@ -167,6 +173,7 @@ public class SCR_SliderControler : MonoBehaviour
 
                 if (muycontento)
                 {
+                    audioManager.AudioReyMuyContento();
                     muycontento = false;
                     contento = true;
                     enfadado = true;
@@ -320,6 +327,7 @@ public class SCR_SliderControler : MonoBehaviour
     {
         if (requerido)
         {
+            audioManager.AudioChiste();
             timer = timer + chistes_Data.valorSlide;
         }
         else
@@ -334,6 +342,7 @@ public class SCR_SliderControler : MonoBehaviour
     void GameOver()
     {
         pantallaGameOver.SetActive(true);
+        audioManager.AudioTrompetasDerrota();
     }
     public void InicioMenu()
     {
@@ -341,7 +350,10 @@ public class SCR_SliderControler : MonoBehaviour
         {
             objetos[i].SetActive(false);
         }
-        pantallaInicio.GetComponent<SpriteRenderer>().sortingOrder = 6;
+        Debug.Log("InicioMenu");
+        pantallaInicio.GetComponent<SpriteRenderer>().sortingOrder = 100;
+        slider.gameObject.SetActive(false);
+        confetiusado.gameObject.SetActive(false);
 
     }
     public void InicioJuego()
@@ -350,6 +362,7 @@ public class SCR_SliderControler : MonoBehaviour
         sceneManager.patito = true;
         sceneManager.IsSombreroInScene = false;
         sceneManager.confetiUsed = true;
+        confetiusado.SetActive(false);
         for (int i = 0; i < objetos.Length; i++)
         {
             objetos[i].SetActive(true);

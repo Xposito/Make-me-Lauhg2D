@@ -9,6 +9,9 @@ public class SCR_CalculoTiempo : MonoBehaviour
     [Header("Managers")]
     SCR_InteractManager interactManager;
     SCO_SceneManager sceneManager;
+    SCR_AudioManager audioManager;
+    SCR_MainMenu mainMenu;
+    
 
     [Header("Lacayos")]
     public GameObject[] spawnpoints;
@@ -38,7 +41,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
 
     //Floats que miden los tiempos
 
-    private float currentTime = 0f; //Tiempo que corre para el nivel
+    public float currentTime = 0f; //Tiempo que corre para el nivel
     private float lacayosTime = 0f; //Tiempo que corre para el spawn de lacayos
     private float sombreroTime = 0f; //Tiempo que corre para el spawn de sombreros
     private float chistesTime = 0f; //Tiempo que que corre para el spawn de chistes
@@ -49,7 +52,8 @@ public class SCR_CalculoTiempo : MonoBehaviour
     {
         interactManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_InteractManager>();
         sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
-        
+        audioManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_AudioManager>();
+        mainMenu = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_MainMenu>();
         //Restart();
     }
 
@@ -61,7 +65,9 @@ public class SCR_CalculoTiempo : MonoBehaviour
             if (sceneManager.startTime)
             {
                 sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
-                currentTime = 0;
+
+                
+                
                 sceneManager.startTime = false;
                 targetTime = sceneManager.tiempoNivel;
                 
@@ -87,6 +93,10 @@ public class SCR_CalculoTiempo : MonoBehaviour
             }
             Final();
         }
+        else
+        {
+            
+        }
         // Lógica personalizada de tiempo
         
 
@@ -100,8 +110,16 @@ public class SCR_CalculoTiempo : MonoBehaviour
         
         if (currentTime >= sceneManager.tiempoNivel)
         {
+            audioManager.AudioTrompetasVictoria();
             sceneManager.stopTime = true;
             sceneManager.startTime = true;
+            currentTime = 0;
+            lacayosTime = 0;
+            sombreroTime = 0;
+            chistesTime = 0;
+            mainMenu.MenuInicio();
+
+
         }
         
         

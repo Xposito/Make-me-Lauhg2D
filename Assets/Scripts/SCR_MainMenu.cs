@@ -34,6 +34,7 @@ public class SCR_MainMenu : MonoBehaviour
         holder.sceneManager.startTime = true;
         holder.sceneManager.stopTime = true;
         requisito.SetActive(true);
+        menuInicio.SetActive(false); 
         sliderControler.InicioJuego();
 
     }

@@ -107,6 +107,7 @@ public class SCR_InteractManager : MonoBehaviour
                 {
                     if (hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.Used)
                     {
+                        audioManager.Audioconfeti();
                         sliderControler.Confeti(hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration);
                         scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.scaleTime;
                         sceneManager.confetiUsed = false;
@@ -170,7 +171,7 @@ public class SCR_InteractManager : MonoBehaviour
             //Interacción con Chistes
             if (hit.collider.gameObject.layer == 8)
             {
-
+                
                 if (hit.collider.gameObject.GetComponent<SCR_Holder>().chistes_Data.ID == 0 && Input.GetMouseButtonDown(0))
                 {
                     sliderControler.Chistes(sceneManager.chistesPobreza, hit.collider.gameObject.GetComponent<SCR_Holder>().chistes_Data);

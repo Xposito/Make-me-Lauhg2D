@@ -25,7 +25,7 @@ MonoBehaviour:
   chistesAnimales: 1
   chistesAmor: 1
   chistesRopa: 1
-  IsSombreroInScene: 0
+  IsSombreroInScene: 1
   tiempoNivel: 60
   tiempoSpawnLacayos: 3
   tiempoSpawnChistes: 10
@@ -50,4 +50,5 @@ MonoBehaviour:
   tiempoVidaLacayos: 6
   stopTime: 0
   startTime: 0
+  gameOver: 0
   confetiUsed: 1
