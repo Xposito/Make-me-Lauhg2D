@@ -83,8 +83,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
             sombreroTime += Time.deltaTime;
             chistesTime += Time.deltaTime;
 
-            if (noIntantiate)
-            {
+            
                 // Comienza la espera cuando se presiona la tecla 'Espacio'
                 if (lacayosTime >= sceneManager.tiempoSpawnLacayos)
                 {
@@ -98,7 +97,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
                 {
                     ElegirTipoChiste();
                 }
-            }
+            
             
             Final();
         }
@@ -116,10 +115,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
     void Final()
     {
         
-        if(currentTime >= sceneManager.tiempoNivel - 3)
-        {
-            noIntantiate = true;
-        }
+        
 
 
         
