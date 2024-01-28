@@ -26,6 +26,8 @@ public class SCR_SliderControler : MonoBehaviour
 
     public GameObject[] objetos;
     public GameObject pantallaInicio;
+
+    public GameObject pantallaGameOver;
     
 
     bool muycontento =  true;
@@ -92,16 +94,7 @@ public class SCR_SliderControler : MonoBehaviour
                     cambiosContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
                 }
 
-                //if (muyenfadado)
-                //{
-                //    StopAllCoroutines();
-                //    muyenfadado= false;
-                //    StartCoroutine(cambioestado(0));
-                //}
-                //contento =  true;
-                //serio = true;
-                //enfadado = true;
-                //muycontento= true;
+               
                 //Debug.Log("menos del 20%");
             }
             if (timer <= slider.maxValue * 40 / 100 && timer > slider.maxValue * 20 / 100)
@@ -195,6 +188,9 @@ public class SCR_SliderControler : MonoBehaviour
         }
         else
         {
+           
+
+            
             //Meter escena de gameover
         }
        
@@ -223,11 +219,12 @@ public class SCR_SliderControler : MonoBehaviour
             if (timer <= 0) 
             {
                 sceneManager.stopTime = true;
+                GameOver();
             }
             if (sceneManager.stopTime == false)
             {
                 slider.value = timer;
-                GameOver();
+                
             }
 
         }
@@ -336,9 +333,9 @@ public class SCR_SliderControler : MonoBehaviour
 
     void GameOver()
     {
-
+        pantallaGameOver.SetActive(true);
     }
-    void InicioMenu()
+    public void InicioMenu()
     {
         for (int i = 0; i < objetos.Length; i++)
         {
@@ -347,7 +344,7 @@ public class SCR_SliderControler : MonoBehaviour
         pantallaInicio.GetComponent<SpriteRenderer>().sortingOrder = 6;
 
     }
-    void InicioJuego()
+    public void InicioJuego()
     {
         sceneManager.timerSpeed = 1.0f;
         sceneManager.patito = true;

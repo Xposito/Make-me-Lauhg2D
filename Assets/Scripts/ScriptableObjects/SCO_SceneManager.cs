@@ -57,6 +57,7 @@ public class SCO_SceneManager : ScriptableObject
     [Header("Controlador")]
     public bool stopTime;
     public bool startTime;
+    public bool gameOver;
     public bool confetiUsed;
 
 
