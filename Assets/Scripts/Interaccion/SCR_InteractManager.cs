@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
@@ -8,6 +9,7 @@ public class SCR_InteractManager : MonoBehaviour
 #region Variables
     SCO_SceneManager sceneManager;
     SCR_SliderControler sliderControler;
+    SCR_AudioManager audioManager;
     public SCO_Object_Configuration confeti_SCO;
     public SCO_Object_Configuration sombrero_SCO;
 
@@ -25,9 +27,9 @@ public class SCR_InteractManager : MonoBehaviour
     {
         sliderControler = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_SliderControler>();
         sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
-        
-        
-        
+        audioManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_AudioManager>();
+
+
 
         scaleTime = sceneManager.TimerSpeed;
     }
@@ -69,8 +71,12 @@ public class SCR_InteractManager : MonoBehaviour
                 //Patito De Goma
                 if (hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.ID == 0 && Input.GetMouseButtonDown(0))
                 {
+                    audioManager.AudioPato(hit.collider.gameObject.GetComponent<AudioSource>());
                     StartCoroutine(CambioPato());
+                    
                     sliderControler.PatitodeGoma(hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration);
+                    
+                    
                     // Aquí puedes realizar acciones relacionadas con el objeto golpeado
                     Debug.Log("Se ha golpeado un objeto: " + hit.collider.gameObject.name);
                 }
@@ -204,12 +210,12 @@ public class SCR_InteractManager : MonoBehaviour
     
     IEnumerator CambioPato()
     {
-        patoCambio[0].SetActive(false);
+        patoCambio[0].GetComponent<SpriteRenderer>().enabled = false;
         patoCambio[1].SetActive(true);
 
         yield return new WaitForSeconds(0.1f);
 
-        patoCambio[0].SetActive(true);
+        patoCambio[0].GetComponent<SpriteRenderer>().enabled = true;
         patoCambio[1].SetActive(false);
     }
    
