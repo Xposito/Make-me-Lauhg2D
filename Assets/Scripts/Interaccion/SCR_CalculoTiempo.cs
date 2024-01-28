@@ -7,6 +7,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
 {
     #region Variables
     [Header("Managers")]
+    Manager manager;
     SCR_InteractManager interactManager;
     SCO_SceneManager sceneManager;
     SCR_AudioManager audioManager;
@@ -119,6 +120,24 @@ public class SCR_CalculoTiempo : MonoBehaviour
             sombreroTime = 0;
             chistesTime = 0;
             mainMenu.MenuInicio();
+
+            if (sceneManager.primernivel)
+            {
+                manager.primerNivelComplete = true;
+            }
+            if (sceneManager.segundonivel)
+            {
+                manager.segundoNivelComplete= true;
+            }
+            if (sceneManager.tercernivelnivel)
+            {
+                manager.terceroNivelComplete = true;
+            }
+            if (sceneManager.cuartonivel)
+            {
+                manager.cuartpNivelComplete = true;
+            }
+
 
             StopAllCoroutines();
         }

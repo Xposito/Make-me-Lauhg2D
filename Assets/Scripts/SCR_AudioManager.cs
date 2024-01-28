@@ -8,26 +8,32 @@ public class SCR_AudioManager : MonoBehaviour
     [Header("Objetos")]
     public AudioClip pato;
     public AudioClip confeti;
-    public AudioClip CajadeMusica;
+    public AudioClip haba;
+    public AudioClip cajaDeMusica;
     public AudioClip juglar;
     public AudioClip chiste;
-
     public AudioClip reyMuyEnfadado;
     public AudioClip reyEnfadado;
     public AudioClip reySerio;
     public AudioClip reyContento;
     public AudioClip reyMuyContento;
-
-
-
     public AudioClip musicadeFondo;
+    public AudioClip musicadeFondoIngame;
     public AudioClip musicadePasos;
     public AudioClip musicaTrompetasDerrota;
     public AudioClip musicaTrompetasVictoria;
 
+    [Header("UI")]
+    public AudioClip libro;
+    public AudioClip boton;
+
     public AudioSource musicaEfectos;
     public AudioSource reyAudio;
-    
+    public AudioSource vinilo;
+    public AudioSource menu;
+
+
+    #region ObjetosJuego
     public void AudioPato(AudioSource audio)
     {
         audio.PlayOneShot(pato);
@@ -38,6 +44,20 @@ public class SCR_AudioManager : MonoBehaviour
         musicaEfectos.PlayOneShot(confeti);
     }
 
+    public void Audiohaba()
+    {
+        musicaEfectos.PlayOneShot(haba);
+    }
+
+    public void AudioCajaDeMusica()
+    {
+        vinilo.PlayOneShot(cajaDeMusica);
+    }
+    public void PararCajaDeMusica()
+    {
+        vinilo.Stop();
+        Debug.Log("Stop");
+    }
     public void AudioChiste()
     {
         musicaEfectos.PlayOneShot(chiste);
@@ -76,6 +96,28 @@ public class SCR_AudioManager : MonoBehaviour
     {
         reyAudio.Stop();
         reyAudio.PlayOneShot(reyMuyContento);
+    }
+    #endregion
+
+    public void AudioLibro()
+    {
+        musicaEfectos.PlayOneShot(libro);
+    }
+
+    public void AudioBoton()
+    {
+        musicaEfectos.PlayOneShot(boton);
+    }
+    public void MusicaDeFondo()
+    {
+
+        menu.Play();
+        menu.clip = musicadeFondo;
+    }
+    public void CambioDeCanción()
+    {
+        menu.clip = musicadeFondoIngame;
+        menu.Play();
     }
 
 }

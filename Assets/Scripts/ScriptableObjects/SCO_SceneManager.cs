@@ -60,6 +60,12 @@ public class SCO_SceneManager : ScriptableObject
     public bool gameOver;
     public bool confetiUsed;
 
+    public bool primernivel;
+    public bool segundonivel;
+    public bool tercernivelnivel;
+    public bool cuartonivel;
+
+
 
    
 

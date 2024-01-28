@@ -89,11 +89,19 @@ public class SCR_InteractManager : MonoBehaviour
                     sceneManager.timerSpeed = scaleTime;
                     Debug.Log("Se mantiene" + hit.collider.gameObject.name);
 
+                    audioManager.AudioCajaDeMusica();
+
                 }
                 else if (hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.ID == 1 && Input.GetMouseButton(0) && !sceneManager.cajitaMusica)
                 {
                     float scaleTime = 1.5f;
                     sceneManager.timerSpeed = scaleTime;
+
+                    
+                }
+                else
+                {
+                    audioManager.PararCajaDeMusica();
                 }
 
 
@@ -140,13 +148,16 @@ public class SCR_InteractManager : MonoBehaviour
 
                 if (hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.ID == 0 && Input.GetMouseButtonDown(0))
                 {
+                    audioManager.Audiohaba();
                     sliderControler.Bean(sceneManager.beanLisa, hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data);
                     scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.scaleTime;
                     //Destroy(hit.collider.gameObject);
                     hit.collider.gameObject.SetActive(false);
+
                 }
                 if (hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.ID == 1 && Input.GetMouseButtonDown(0))
                 {
+                    audioManager.Audiohaba();
                     sliderControler.Bean(sceneManager.beanRallada, hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data);
                     scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.scaleTime;
                     //Destroy(hit.collider.gameObject);
@@ -154,6 +165,7 @@ public class SCR_InteractManager : MonoBehaviour
                 }
                 if (hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.ID == 2 && Input.GetMouseButtonDown(0))
                 {
+                    audioManager.Audiohaba();
                     sliderControler.Bean(sceneManager.beanPuntos, hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data);
                     scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.scaleTime;
                     //Destroy(hit.collider.gameObject);
@@ -161,6 +173,7 @@ public class SCR_InteractManager : MonoBehaviour
                 }
                 if (hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.ID == 3 && Input.GetMouseButtonDown(0))
                 {
+                    audioManager.Audiohaba();
                     sliderControler.Bean(sceneManager.beanEstrellas, hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data);
                     scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.scaleTime;
                     //Destroy(hit.collider.gameObject);

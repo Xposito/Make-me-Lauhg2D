@@ -355,6 +355,9 @@ public class SCR_SliderControler : MonoBehaviour
         slider.gameObject.SetActive(false);
         confetiusado.gameObject.SetActive(false);
 
+        audioManager.MusicaDeFondo();
+       
+
     }
     public void InicioJuego()
     {
