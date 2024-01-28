@@ -233,7 +233,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
     }
     IEnumerator DestruirLacayo(GameObject chiste)
     {
-        chiste.transform.position = chiste.transform.position + new Vector3(100, 100, 100);
+        
         yield return new WaitForSeconds(sceneManager.tiempoVidaLacayos);
        
         Destroy(chiste);
