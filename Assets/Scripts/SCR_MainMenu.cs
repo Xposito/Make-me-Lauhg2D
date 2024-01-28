@@ -129,4 +129,9 @@ public class SCR_MainMenu : MonoBehaviour
         }
 
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
