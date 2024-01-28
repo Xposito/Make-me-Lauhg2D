@@ -18,6 +18,7 @@ public class SCR_MainMenu : MonoBehaviour
     public GameObject menuInicio;
     public GameObject[] botonesdeDías;
     public GameObject[] requisitos;
+    public GameObject espera;
     public GameObject botonJugar;
     public GameObject botonQuit;
     Button boton;
@@ -45,12 +46,13 @@ public class SCR_MainMenu : MonoBehaviour
     public void Dia1()
     {
         requisitos[0].SetActive(false);
+
         audioManager.CambioDeCanción();
         calendario.SetActive(false);
         holder.sceneManager = holder.choseSceneManager[0];
         holder.sceneManager.startTime = true;
         holder.sceneManager.stopTime = true;
-        
+        espera.SetActive(true);
         menuInicio.SetActive(false);
         botonJugar.SetActive(true);
         botonQuit.SetActive(true);
@@ -70,7 +72,7 @@ public class SCR_MainMenu : MonoBehaviour
         holder.sceneManager = holder.choseSceneManager[1];
         holder.sceneManager.startTime = true;
         holder.sceneManager.stopTime = true;
-        
+        espera.SetActive(true);
         menuInicio.SetActive(false);
         botonJugar.SetActive(true);
         sliderControler.InicioJuego();
@@ -88,7 +90,7 @@ public class SCR_MainMenu : MonoBehaviour
         holder.sceneManager = holder.choseSceneManager[3];
         holder.sceneManager.startTime = true;
         holder.sceneManager.stopTime = true;
-        
+        espera.SetActive(true);
         menuInicio.SetActive(false);
         botonJugar.SetActive(true);
         sliderControler.InicioJuego();
@@ -106,7 +108,7 @@ public class SCR_MainMenu : MonoBehaviour
         holder.sceneManager = holder.choseSceneManager[3];
         holder.sceneManager.startTime = true;
         holder.sceneManager.stopTime = true;
-        
+        espera.SetActive(true);
         menuInicio.SetActive(false);
         botonJugar.SetActive(true);
         sliderControler.InicioJuego();

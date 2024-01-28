@@ -30,7 +30,7 @@ public class SCR_UpdateBotones : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dia1)
+        if (dia1 && !manager.primerNivelComplete)
         {
             requisito1.SetActive(true);
             candado.SetActive(false);

@@ -58,6 +58,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
         sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
         audioManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_AudioManager>();
         mainMenu = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_MainMenu>();
+        manager = GameObject.FindGameObjectWithTag("GameController").GetComponent<Manager>();
         //Restart();
     }
 
