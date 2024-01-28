@@ -51,7 +51,14 @@ public class SCO_SceneManager : ScriptableObject
     public float probabilidadSpawnChisteAnimales;
     public float probabilidadSpawnChisteAmor;
     public float probabilidadSpawnChisteRopa;
-    
+    public int tiempoVidaChistes;
+    public int tiempoVidaLacayos;
+
+    [Header("Controlador")]
+    public bool stopTime;
+    public bool startTime;
+    public bool confetiUsed;
+
 
    
 

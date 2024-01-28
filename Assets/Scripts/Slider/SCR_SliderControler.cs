@@ -16,13 +16,17 @@ public class SCR_SliderControler : MonoBehaviour
 
     public SCO_SceneManager sceneManager; //Manager de Características
 
-    public bool stopTimer = false; //Para el Slide
+    
 
     public GameObject cambiosMuyContento;
     public GameObject cambiosContento;
     public GameObject cambiosserio;
     public GameObject cambiosenfadado;
     public GameObject cambiosMuyEnfadado;
+
+    public GameObject[] objetos;
+    public GameObject pantallaInicio;
+    
 
     bool muycontento =  true;
     bool contento;
@@ -33,146 +37,167 @@ public class SCR_SliderControler : MonoBehaviour
     #endregion
 
     void Start()
-    {   
+    {
+        
+        slider.gameObject.SetActive(false);
         sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
-        timer = sceneManager.timer;
-        slider.maxValue = sceneManager.timer;
-        slider.value = sceneManager.timer;
-        StartTimer();
+        sceneManager.stopTime = true;
+        sceneManager.startTime = true;
+        InicioMenu();
+        
     }
 
 
     private void Update()
     {
-        valor = slider.value / slider.maxValue;
-        UpdateColor(valor);
+        
 
         //Los if diferencian los tramos de muecas
-
-        if(timer <= slider.maxValue * (20 / 100))
+        if (!sceneManager.stopTime)
         {
-            if (muyenfadado)
-            {
-                muycontento = true;
-                contento = true;
-                enfadado = true;
-                serio = true;
-                muyenfadado = false;
-
-
-                cambiosMuyContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                cambiosMuyEnfadado.GetComponent<SpriteRenderer>().sortingOrder = 5;
-                cambiosenfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                cambiosserio.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                cambiosContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
-            }
-
-            //if (muyenfadado)
-            //{
-            //    StopAllCoroutines();
-            //    muyenfadado= false;
-            //    StartCoroutine(cambioestado(0));
-            //}
-            //contento =  true;
-            //serio = true;
-            //enfadado = true;
-            //muycontento= true;
-            //Debug.Log("menos del 20%");
-        }
-        if (timer <= slider.maxValue * 40 / 100 && timer > slider.maxValue * 20 / 100)
-        {
-            if (enfadado)
-            {
-                muycontento = true;
-                contento = true;
-                enfadado = false;
-                serio = true;
-                muyenfadado = true;
-
-
-                cambiosMuyContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                cambiosMuyEnfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                cambiosenfadado.GetComponent<SpriteRenderer>().sortingOrder = 5;
-                cambiosserio.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                cambiosContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
-            }
            
-            
-            //Debug.Log("menos del 40%");
-        }   
-        if (timer <= slider.maxValue * 60 / 100 && timer > slider.maxValue * 40 / 100)
-        {
-
-            if (serio)
+            if (sceneManager.startTime)
             {
-                muycontento = true;
-                contento = true;
-                enfadado = true;
-                serio = false;
-                muyenfadado = true;
+                sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
+                sceneManager.startTime = false;
+                timer = sceneManager.timer;
+                slider.maxValue = sceneManager.timer;
+                slider.value = sceneManager.timer;
+                StartTimer();
+                InicioJuego();
 
-
-                cambiosMuyContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                cambiosMuyEnfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                cambiosenfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                cambiosserio.GetComponent<SpriteRenderer>().sortingOrder = 5;
-                cambiosContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
             }
-            
-            //Debug.Log("menos del 60%");
+
+
+            slider.gameObject.SetActive(true);
+
+            valor = slider.value / slider.maxValue;
+            UpdateColor(valor);
+
+            if (timer <= slider.maxValue * (20 / 100))
+            {
+                if (muyenfadado)
+                {
+                    muycontento = true;
+                    contento = true;
+                    enfadado = true;
+                    serio = true;
+                    muyenfadado = false;
+
+
+                    cambiosMuyContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    cambiosMuyEnfadado.GetComponent<SpriteRenderer>().sortingOrder = 5;
+                    cambiosenfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    cambiosserio.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    cambiosContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                }
+
+                //if (muyenfadado)
+                //{
+                //    StopAllCoroutines();
+                //    muyenfadado= false;
+                //    StartCoroutine(cambioestado(0));
+                //}
+                //contento =  true;
+                //serio = true;
+                //enfadado = true;
+                //muycontento= true;
+                //Debug.Log("menos del 20%");
+            }
+            if (timer <= slider.maxValue * 40 / 100 && timer > slider.maxValue * 20 / 100)
+            {
+                if (enfadado)
+                {
+                    muycontento = true;
+                    contento = true;
+                    enfadado = false;
+                    serio = true;
+                    muyenfadado = true;
+
+
+                    cambiosMuyContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    cambiosMuyEnfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    cambiosenfadado.GetComponent<SpriteRenderer>().sortingOrder = 5;
+                    cambiosserio.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    cambiosContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                }
+
+
+                //Debug.Log("menos del 40%");
+            }
+            if (timer <= slider.maxValue * 60 / 100 && timer > slider.maxValue * 40 / 100)
+            {
+
+                if (serio)
+                {
+                    muycontento = true;
+                    contento = true;
+                    enfadado = true;
+                    serio = false;
+                    muyenfadado = true;
+
+
+                    cambiosMuyContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    cambiosMuyEnfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    cambiosenfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    cambiosserio.GetComponent<SpriteRenderer>().sortingOrder = 5;
+                    cambiosContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                }
+
+                //Debug.Log("menos del 60%");
+            }
+            if (timer <= slider.maxValue * 80 / 100 && timer > slider.maxValue * 60 / 100)
+            {
+                if (contento)
+                {
+                    muycontento = true;
+                    contento = false;
+                    enfadado = true;
+                    serio = true;
+                    muyenfadado = true;
+
+
+                    cambiosMuyContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    cambiosMuyEnfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    cambiosenfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    cambiosserio.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    cambiosContento.GetComponent<SpriteRenderer>().sortingOrder = 5;
+                }
+
+
+                //Debug.Log("menos del 80%");
+            }
+            if (timer <= slider.maxValue * 100 / 100 && timer > slider.maxValue * 80 / 100)
+            {
+
+
+
+                if (muycontento)
+                {
+                    muycontento = false;
+                    contento = true;
+                    enfadado = true;
+                    serio = true;
+                    muyenfadado = true;
+
+
+                    cambiosMuyContento.GetComponent<SpriteRenderer>().sortingOrder = 5;
+                    cambiosMuyEnfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    cambiosenfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    cambiosserio.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    cambiosContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                }
+
+
+
+                //Debug.Log("menos del 100%");
+            }
         }
-        if (timer <= slider.maxValue * 80 / 100 && timer > slider.maxValue * 60 / 100)
+        else
         {
-            if (contento)
-            {
-                muycontento = true;
-                contento = false;
-                enfadado = true;
-                serio = true;
-                muyenfadado = true;
-
-                
-                cambiosMuyContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                cambiosMuyEnfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                cambiosenfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                cambiosserio.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                cambiosContento.GetComponent<SpriteRenderer>().sortingOrder = 5;
-            }
-
-            
-            //Debug.Log("menos del 80%");
-        }
-        if (timer <= slider.maxValue * 100 / 100 && timer > slider.maxValue * 80 / 100)
-        {
-          
-            
-
-            if (muycontento)
-            {
-                muycontento = false;
-                contento = true;
-                enfadado = true;
-                serio = true;
-                muyenfadado = true;
-
-
-                cambiosMuyContento.GetComponent<SpriteRenderer>().sortingOrder = 5;
-                cambiosMuyEnfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                cambiosenfadado.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                cambiosserio.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                cambiosContento.GetComponent<SpriteRenderer>().sortingOrder = 1;
-            }
-           
-
-            
-            //Debug.Log("menos del 100%");
+            //Meter escena de gameover
         }
        
-
-        if (stopTimer)
-        {
-            //Volver al inicio.
-        }
     }
 
 
@@ -187,7 +212,7 @@ public class SCR_SliderControler : MonoBehaviour
     //Hace que el slider vaya bajando
     IEnumerator StartTheTimerTicker()
     {
-        while (stopTimer == false)
+        while (sceneManager.stopTime == false)
         {
             Time.timeScale = sceneManager.TimerSpeed;
             timer -= Time.deltaTime;
@@ -197,11 +222,12 @@ public class SCR_SliderControler : MonoBehaviour
             
             if (timer <= 0) 
             {
-                stopTimer = true;
+                sceneManager.stopTime = true;
             }
-            if (stopTimer == false)
+            if (sceneManager.stopTime == false)
             {
                 slider.value = timer;
+                GameOver();
             }
 
         }
@@ -305,40 +331,34 @@ public class SCR_SliderControler : MonoBehaviour
         }
 
     }
-    //IEnumerator cambioestado(int numerodelestado)
-    //{
-    //    cambiosdeAnimo[numerodelestado].SetActive(true);
+    
 
 
-    //    yield return new WaitForSeconds(1f);
+    void GameOver()
+    {
 
-    //    for (int i = 0; i < cambiosdeAnimo.Length;)
-    //    {
-    //        if (i != numerodelestado)
-    //        {
-    //            cambiosdeAnimo[i].SetActive(false);
-    //        }
+    }
+    void InicioMenu()
+    {
+        for (int i = 0; i < objetos.Length; i++)
+        {
+            objetos[i].SetActive(false);
+        }
+        pantallaInicio.GetComponent<SpriteRenderer>().sortingOrder = 6;
 
-    //        i++;
-    //    }
-    //    cambiosdeAnimo[numerodelestado].transform.GetChild(0).gameObject.SetActive(true);
-    //}
-    //void CambioEstadoPIm(int numerodelestado)
-    //{
-    //    cambiosdeAnimo[numerodelestado].SetActive(true);
+    }
+    void InicioJuego()
+    {
+        sceneManager.timerSpeed = 1.0f;
+        sceneManager.patito = true;
+        sceneManager.IsSombreroInScene = false;
+        sceneManager.confetiUsed = true;
+        for (int i = 0; i < objetos.Length; i++)
+        {
+            objetos[i].SetActive(true);
+        }
+        pantallaInicio.GetComponent<SpriteRenderer>().sortingOrder = -1;
+    }
 
 
-
-
-    //    for (int i = 0; i < cambiosdeAnimo.Length;)
-    //    {
-    //        if (i != numerodelestado)
-    //        {
-    //            cambiosdeAnimo[i].SetActive(false);
-    //        }
-
-    //        i++;
-    //    }
-    //    cambiosdeAnimo[numerodelestado].transform.GetChild(0).gameObject.SetActive(true);
-    //}
 }

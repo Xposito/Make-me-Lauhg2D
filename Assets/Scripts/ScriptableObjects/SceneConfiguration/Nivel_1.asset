@@ -46,3 +46,8 @@ MonoBehaviour:
   probabilidadSpawnChisteAnimales: 50
   probabilidadSpawnChisteAmor: 75
   probabilidadSpawnChisteRopa: 100
+  tiempoVidaChistes: 3
+  tiempoVidaLacayos: 6
+  stopTime: 1
+  startTime: 0
+  confetiUsed: 0

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: BeanPuntos
   m_EditorClassIdentifier: 
   ID: 2
-  valorSlide: 3
+  valorSlide: 2
   scaleTime: 0.8

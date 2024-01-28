@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Escena2
   m_EditorClassIdentifier: 
   timer: 15
-  timerSpeed: 1.5
+  timerSpeed: 1.2
   patito: 1
   cajitaMusica: 1
   confeti: 1
@@ -46,3 +46,8 @@ MonoBehaviour:
   probabilidadSpawnChisteAnimales: 50
   probabilidadSpawnChisteAmor: 75
   probabilidadSpawnChisteRopa: 100
+  tiempoVidaChistes: 3
+  tiempoVidaLacayos: 6
+  stopTime: 1
+  startTime: 1
+  confetiUsed: 1

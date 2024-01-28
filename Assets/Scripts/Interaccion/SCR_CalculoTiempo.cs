@@ -49,52 +49,63 @@ public class SCR_CalculoTiempo : MonoBehaviour
     {
         interactManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_InteractManager>();
         sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
-        targetTime = sceneManager.tiempoNivel;
-        StartCoroutine(CustomWait());
+        
         //Restart();
     }
 
     void Update()
     {
-        // Lógica personalizada de tiempo
-        currentTime += Time.deltaTime;
-        lacayosTime += Time.deltaTime;
-        sombreroTime += Time.deltaTime;
-        chistesTime += Time.deltaTime;
+        if (!sceneManager.stopTime)
+        {
+            
+            if (sceneManager.startTime)
+            {
+                sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
+                currentTime = 0;
+                sceneManager.startTime = false;
+                targetTime = sceneManager.tiempoNivel;
+                
 
-        // Comienza la espera cuando se presiona la tecla 'Espacio'
-        if(lacayosTime >= sceneManager.tiempoSpawnLacayos)
-        {
-            ElegirLacayo();
+            }
+            currentTime += Time.deltaTime;
+            lacayosTime += Time.deltaTime;
+            sombreroTime += Time.deltaTime;
+            chistesTime += Time.deltaTime;
+
+            // Comienza la espera cuando se presiona la tecla 'Espacio'
+            if (lacayosTime >= sceneManager.tiempoSpawnLacayos)
+            {
+                ElegirLacayo();
+            }
+            if (sombreroTime >= sceneManager.tiempoSpawnSombrero && !sceneManager.IsSombreroInScene)
+            {
+                ElegirSpawnSombrero();
+            }
+            if (chistesTime >= sceneManager.tiempoSpawnChistes)
+            {
+                ElegirTipoChiste();
+            }
+            Final();
         }
-        if (sombreroTime >= sceneManager.tiempoSpawnSombrero && !sceneManager.IsSombreroInScene)
-        {
-            ElegirSpawnSombrero();
-        }
-        if(chistesTime >= sceneManager.tiempoSpawnChistes)
-        {
-            ElegirTipoChiste();
-        }
+        // Lógica personalizada de tiempo
+        
 
 
     }
 
     //Lleva el tiempo que tienes que sobrevivir
-    IEnumerator CustomWait()
+    void Final()
     {
         
         
-        while (currentTime < targetTime)
+        if (currentTime >= sceneManager.tiempoNivel)
         {
-            
-            
-
-            yield return null;
+            sceneManager.stopTime = true;
+            sceneManager.startTime = true;
         }
         
-
-        // Restablece el tiempo y realiza acciones después de la espera
-        currentTime = 0f;
+        
+        
         
         
     }
@@ -134,17 +145,21 @@ public class SCR_CalculoTiempo : MonoBehaviour
         if (randomNumber <= 50)
         {
             GameObject lacayoIntancia = Instantiate(lacayoRandom, spawnpoints[0].transform.position, Quaternion.identity);
+            
             //Instantiate(lacayos_1, spawnpoints[0].transform.position, Quaternion.identity);
             RandomBean(lacayoIntancia);
             StartCoroutine(MoverLacayo(lacayoIntancia.transform, spawnpoints[1].transform) );
+            StartCoroutine(DestruirLacayo(lacayoIntancia));
         }
         else
         {
             GameObject lacayoIntancia = Instantiate(lacayoRandom, spawnpoints[1].transform.position, Quaternion.identity);
+            
             lacayoIntancia.transform.localScale = new Vector3(lacayoIntancia.transform.localScale.x * -1, lacayoIntancia.transform.localScale.y, lacayoIntancia.transform.localScale.z);
             //Instantiate(lacayos_1, spawnpoints[0].transform.position, Quaternion.identity);
             RandomBean(lacayoIntancia);
             StartCoroutine(MoverLacayo(lacayoIntancia.transform, spawnpoints[0].transform));
+            StartCoroutine(DestruirLacayo(lacayoIntancia));
         }
         lacayosTime = 0f;
     }
@@ -170,6 +185,11 @@ public class SCR_CalculoTiempo : MonoBehaviour
         // Asegúrate de que el objeto esté exactamente en la posición final
         
     
+    }
+    IEnumerator DestruirLacayo(GameObject chiste)
+    {
+        yield return new WaitForSeconds(sceneManager.tiempoVidaLacayos);
+        Destroy(chiste);
     }
     #endregion
 
@@ -323,7 +343,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
 
     IEnumerator DestruirChistes(GameObject chiste)
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(sceneManager.tiempoVidaChistes);
         Destroy(chiste);
     }
     #endregion 

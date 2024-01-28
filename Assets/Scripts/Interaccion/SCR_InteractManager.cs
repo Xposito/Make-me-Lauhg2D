@@ -25,17 +25,17 @@ public class SCR_InteractManager : MonoBehaviour
     {
         sliderControler = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_SliderControler>();
         sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
-        sceneManager.timerSpeed = 1.0f;
-        sceneManager.patito = true;
-        sceneManager.IsSombreroInScene = false;
-        confeti_SCO.Used = true;
+        
+        
+        
 
         scaleTime = sceneManager.TimerSpeed;
     }
 
     void Update()
     {
-        
+        sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
+        confeti_SCO.Used = sceneManager.confetiUsed;
 
         sceneManager.timerSpeed = scaleTime;
         ObjetosInteractuables();
@@ -103,7 +103,7 @@ public class SCR_InteractManager : MonoBehaviour
                     {
                         sliderControler.Confeti(hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration);
                         scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.scaleTime;
-                        hit.collider.gameObject.GetComponent<SCR_Holder>().object_Configuration.Used = false;
+                        sceneManager.confetiUsed = false;
                         confeti[0].SetActive(false);
                         confeti[1].SetActive(true);
                     }
@@ -135,21 +135,25 @@ public class SCR_InteractManager : MonoBehaviour
                 {
                     sliderControler.Bean(sceneManager.beanLisa, hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data);
                     scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.scaleTime;
+                    Destroy(hit.collider.gameObject);
                 }
                 if (hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.ID == 1 && Input.GetMouseButtonDown(0))
                 {
                     sliderControler.Bean(sceneManager.beanRallada, hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data);
                     scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.scaleTime;
+                    Destroy(hit.collider.gameObject);
                 }
                 if (hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.ID == 2 && Input.GetMouseButtonDown(0))
                 {
                     sliderControler.Bean(sceneManager.beanPuntos, hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data);
                     scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.scaleTime;
+                    Destroy(hit.collider.gameObject);
                 }
                 if (hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.ID == 3 && Input.GetMouseButtonDown(0))
                 {
                     sliderControler.Bean(sceneManager.beanEstrellas, hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data);
                     scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.scaleTime;
+                    Destroy(hit.collider.gameObject);
                 }
 
 
