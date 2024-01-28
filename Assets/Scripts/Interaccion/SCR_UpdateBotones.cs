@@ -9,7 +9,7 @@ public class SCR_UpdateBotones : MonoBehaviour
     Manager manager;
 
     GameObject candado;
-    Button boton;
+    public Button boton;
     public bool dia1;
     public bool dia2;
     public bool dia3;
@@ -20,12 +20,21 @@ public class SCR_UpdateBotones : MonoBehaviour
         manager = GameObject.FindGameObjectWithTag("GameController").GetComponent<Manager>();
         candado = transform.GetChild(0).gameObject;
         boton = transform.GetComponent<Button>();
-        
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (dia1)
+        {
+
+            candado.SetActive(false);
+            boton.enabled = true;
+
+        }
+       
         if (dia2 && manager.primerNivelComplete)
         {
             
@@ -33,7 +42,7 @@ public class SCR_UpdateBotones : MonoBehaviour
             boton.enabled = true;
 
         }
-        else
+        else if(dia2)
         {
             candado.SetActive(true);
             boton.enabled = false;  
@@ -47,7 +56,7 @@ public class SCR_UpdateBotones : MonoBehaviour
             boton.enabled = true;
 
         }
-        else
+        else if(dia3)
         {
             candado.SetActive(true);
             boton.enabled = false;
@@ -61,7 +70,7 @@ public class SCR_UpdateBotones : MonoBehaviour
             boton.enabled = true;
 
         }
-        else
+        else if(dia4)
         {
             candado.SetActive(true);
             boton.enabled = false;

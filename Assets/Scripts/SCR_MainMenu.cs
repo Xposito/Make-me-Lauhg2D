@@ -17,6 +17,7 @@ public class SCR_MainMenu : MonoBehaviour
     public GameObject menuInicio;
     public GameObject[] botonesdeDías;
     public GameObject botonJugar;
+    public GameObject botonQuit;
     Button boton;
 
     private void Start()
@@ -31,6 +32,7 @@ public class SCR_MainMenu : MonoBehaviour
     {
         audioManager.AudioLibro();
         botonJugar.SetActive(false);
+        botonQuit.SetActive(false);
         calendario.GetComponent<VideoPlayer>().Play();
 
         StartCoroutine(CuadernoYDías());
@@ -46,6 +48,8 @@ public class SCR_MainMenu : MonoBehaviour
         requisito.SetActive(true);
         menuInicio.SetActive(false);
         botonJugar.SetActive(true);
+        botonQuit.SetActive(true);
+
         sliderControler.InicioJuego();
         for (int i = 0; i < botonesdeDías.Length; i++)
         {

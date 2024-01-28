@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,1918 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5b23b20bf198d4a8241ef89b4dcc96
+      internalID: 246482850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc743ca86c4a30418a9dd10b26803c2
+      internalID: -425429768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2d6f5f1e03ed748b17191b68b37ce7
+      internalID: -1936521905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f918faef506dba41b2e4ff3552bce6f
+      internalID: 759180095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76afa65a1a8f91145b3b6ffa68393a69
+      internalID: 1342377917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99dfd34305c6c6e478a975daadf3b95c
+      internalID: -239852092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673469cc652a5f24d80d8cf1d4f5fddd
+      internalID: 411278732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a439e1795fad53e44a0173639342e7ae
+      internalID: -2136663398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac844aa2a2fcbe468dbc36c02a5dd8e
+      internalID: -236997138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8135c44a4a9f61647b1aa67b630ddc0f
+      internalID: -1076186071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306fd0f0ac3975540921e9412bae636b
+      internalID: 681253879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4616414e847684c4598575401e31d565
+      internalID: -388972924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5fa5582813091945b56b185c62c690a
+      internalID: -603087622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a56f38598e3e01488e3dbb91934a5f0
+      internalID: 1667640657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13fb9f2429404ec4892144717f89575c
+      internalID: -2001804024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00d77ac0e450aa4dbff131183832b5a
+      internalID: -1663239088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9abc346d48b9df04aac5ec3728e5195b
+      internalID: -303963127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02fb1551f89d7fe43a962a77f477f569
+      internalID: 107658255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80043ac18b2e1ff489bafce9725b3d3b
+      internalID: 1884362319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b396cbb78bb9824b8b9a2e63696cfb2
+      internalID: -1953903492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8d39b979ca176478a33af75d80eb90
+      internalID: -2103233116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c71b08172df09e419703a9935ba8f1e
+      internalID: 819276093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e341302e6ecb34eade60c8daeb74e5
+      internalID: -888493674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a689220c80ba64649923457ddc9af256
+      internalID: -911452174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c65dfdd6cec0b43ae3f66a71b1c438
+      internalID: -2135033126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0900d1c923cc8ec49a82ec3d60e8b09b
+      internalID: 2028462257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5adc41fc4f938d438812af7594ebeb9
+      internalID: -430727528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b137a61472658ff4e8b3e082204d4742
+      internalID: 717428508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a7317e800c5a64199c319aa1607855
+      internalID: -1766308921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3454bb0ca487c34baf5a9860b9a248d
+      internalID: 1957994216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df9b9c45e34a5e47ba404a3dca83183
+      internalID: 89378153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64df190335db7e548b7d1cdc15813b03
+      internalID: 236060380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbf6601e88bfb648a23507c6ca796f8
+      internalID: -39552748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea0829b99f863a4890cfdac5739a957
+      internalID: -357595427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3bfce14d238ee4c9b6d85806e5a7fa
+      internalID: 984265867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24064089c7734ea43af4d243257ef4c0
+      internalID: -2040027077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b298abb006b244282f2732a3f9c14b
+      internalID: 1397609157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea73b2f01f0b1d42b9c759e48f0148b
+      internalID: -209154179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e4e3bb67736b248a754aefa51c5f82
+      internalID: -406480407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7919d8e96e56f9440be39c601d1d3a6d
+      internalID: 1262907092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3c833481fee5f4ab13f9b6152519cb
+      internalID: 1276423510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7335d156c03e7f742bf35e468138ca73
+      internalID: -2067669235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82685e4c45bf914c831a08a16c7606b
+      internalID: -1932848414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01546cbfcc15b764db3a1096927eab5a
+      internalID: -332655820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2391f1a46e99c47bcc76742840e536
+      internalID: 574571288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2e2d1a7747f4342ab75d6d32bf7850
+      internalID: -348972615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66de107eb8cdca849b105256b927a431
+      internalID: 167397859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc352733c4b82584a9c2693729a31472
+      internalID: 87311703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c885cc51d301c4d85c7bf603c47651
+      internalID: -244143908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a1609ec3f502c40be613acdb6fe9a7
+      internalID: 2052828463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7deda8c1243ec054e9f38dcf1dbb9eb2
+      internalID: -764732706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59cec9e70228b64f9f97288d3383783
+      internalID: 687990423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6534cd09e04834fb5d51445c205298
+      internalID: -1706229139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07bacf503dd6d7f439fcc21f5b793f90
+      internalID: 1944597425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca06108f67a8b945a3bd0f7d2809c18
+      internalID: -1237399215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a655138ff1ae3494dada5c2955418eff
+      internalID: 1265552561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15a06ca98242a14c9149cf22aac8e0b
+      internalID: 1535929457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35a63b4d0cbf3b41a2d42035adf3ae2
+      internalID: -1857177837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d128f30c04c974baa592f30e1d315d
+      internalID: 102828869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ac625b2ffda1547b858d99e7b32c28
+      internalID: -1073400682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4d75e70143d254db88aade835a0be1
+      internalID: -1909704732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607dce0b6dd9ade4d9f75896d010ba72
+      internalID: 928968044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7d4b3d825ea92429b63f72a11faed6
+      internalID: 2084508128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c5f7cd0e255614a8c94deb7cea9dfb
+      internalID: -1488840615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cac254c67573e740950855a03166490
+      internalID: -1494446106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad19c93df48e42e439f2e2def75a4faf
+      internalID: 1620614877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3bf0b8fee52e64caa3e14e9dda951a
+      internalID: 406452056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6516249820955fe46a8d64822141bc39
+      internalID: 1165206672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8848a09c3a87e8c4c891f1712f30428f
+      internalID: -1934289259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631aefde3302f6546b9c4a718716c416
+      internalID: -604068245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f775469526321d4fb705b080ad88434
+      internalID: -1537859339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1531851574664d04e86c3069e90afc51
+      internalID: 1939506034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e70d3e78b0a8b749ba716259fa598f6
+      internalID: 2003451825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308a324072deb714b89a685939dd924e
+      internalID: -2066596196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4a8d999a89eaf4daffe55e13a16e7a
+      internalID: 1107723844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be0a911249c1cd4bba10fd89b5b9b2d
+      internalID: 1107873476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c6a33504d0b4c42aa7f3d540df5dad
+      internalID: 1746422469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee7b263254be2843a11cb919da383c6
+      internalID: -877338841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd25865ae31b8f74db92f7a4caa389f5
+      internalID: 1274175100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f641a9a75dd20844bafa9272540e333
+      internalID: -724848231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2d23f5b84b0f044a9f8017db3ef06d
+      internalID: -376220163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c288e8a8f6f0b3f48b02f41a6b7b76b5
+      internalID: -1337006603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5616d9ea242cd41b13e6d501b4bd13
+      internalID: 1591201107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60259061d42c31499299df57efba216
+      internalID: -1291210800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa09d61c746f5eb448120813fdb5fdf5
+      internalID: 1908203215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 0
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62005bb09bbab5438e56318427d31fa
+      internalID: 39765719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 0
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 351b65e4deebb0443bb731704b119b79
+      internalID: 923482521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 0
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4adb59ebb66ceaa4b9b9baba0f500069
+      internalID: -48407816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 0
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a4bd66c64f24e44b908b99895660e4
+      internalID: 753743500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 0
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437cd76aec4a6c540b49230112d12d09
+      internalID: 1862058379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salir_onclick_spritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 0
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b42ce4967bc76f48b61f1d7e70f435f
+      internalID: -57185069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +2025,98 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      salir_onclick_spritesheet_0: 246482850
+      salir_onclick_spritesheet_1: -425429768
+      salir_onclick_spritesheet_10: 681253879
+      salir_onclick_spritesheet_11: -388972924
+      salir_onclick_spritesheet_12: -603087622
+      salir_onclick_spritesheet_13: 1667640657
+      salir_onclick_spritesheet_14: -2001804024
+      salir_onclick_spritesheet_15: -1663239088
+      salir_onclick_spritesheet_16: -303963127
+      salir_onclick_spritesheet_17: 107658255
+      salir_onclick_spritesheet_18: 1884362319
+      salir_onclick_spritesheet_19: -1953903492
+      salir_onclick_spritesheet_2: -1936521905
+      salir_onclick_spritesheet_20: -2103233116
+      salir_onclick_spritesheet_21: 819276093
+      salir_onclick_spritesheet_22: -888493674
+      salir_onclick_spritesheet_23: -911452174
+      salir_onclick_spritesheet_24: -2135033126
+      salir_onclick_spritesheet_25: 2028462257
+      salir_onclick_spritesheet_26: -430727528
+      salir_onclick_spritesheet_27: 717428508
+      salir_onclick_spritesheet_28: -1766308921
+      salir_onclick_spritesheet_29: 1957994216
+      salir_onclick_spritesheet_3: 759180095
+      salir_onclick_spritesheet_30: 89378153
+      salir_onclick_spritesheet_31: 236060380
+      salir_onclick_spritesheet_32: -39552748
+      salir_onclick_spritesheet_33: -357595427
+      salir_onclick_spritesheet_34: 984265867
+      salir_onclick_spritesheet_35: -2040027077
+      salir_onclick_spritesheet_36: 1397609157
+      salir_onclick_spritesheet_37: -209154179
+      salir_onclick_spritesheet_38: -406480407
+      salir_onclick_spritesheet_39: 1262907092
+      salir_onclick_spritesheet_4: 1342377917
+      salir_onclick_spritesheet_40: 1276423510
+      salir_onclick_spritesheet_41: -2067669235
+      salir_onclick_spritesheet_42: -1932848414
+      salir_onclick_spritesheet_43: -332655820
+      salir_onclick_spritesheet_44: 574571288
+      salir_onclick_spritesheet_45: -348972615
+      salir_onclick_spritesheet_46: 167397859
+      salir_onclick_spritesheet_47: 87311703
+      salir_onclick_spritesheet_48: -244143908
+      salir_onclick_spritesheet_49: 2052828463
+      salir_onclick_spritesheet_5: -239852092
+      salir_onclick_spritesheet_50: -764732706
+      salir_onclick_spritesheet_51: 687990423
+      salir_onclick_spritesheet_52: -1706229139
+      salir_onclick_spritesheet_53: 1944597425
+      salir_onclick_spritesheet_54: -1237399215
+      salir_onclick_spritesheet_55: 1265552561
+      salir_onclick_spritesheet_56: 1535929457
+      salir_onclick_spritesheet_57: -1857177837
+      salir_onclick_spritesheet_58: 102828869
+      salir_onclick_spritesheet_59: -1073400682
+      salir_onclick_spritesheet_6: 411278732
+      salir_onclick_spritesheet_60: -1909704732
+      salir_onclick_spritesheet_61: 928968044
+      salir_onclick_spritesheet_62: 2084508128
+      salir_onclick_spritesheet_63: -1488840615
+      salir_onclick_spritesheet_64: -1494446106
+      salir_onclick_spritesheet_65: 1620614877
+      salir_onclick_spritesheet_66: 406452056
+      salir_onclick_spritesheet_67: 1165206672
+      salir_onclick_spritesheet_68: -1934289259
+      salir_onclick_spritesheet_69: -604068245
+      salir_onclick_spritesheet_7: -2136663398
+      salir_onclick_spritesheet_70: -1537859339
+      salir_onclick_spritesheet_71: 1939506034
+      salir_onclick_spritesheet_72: 2003451825
+      salir_onclick_spritesheet_73: -2066596196
+      salir_onclick_spritesheet_74: 1107723844
+      salir_onclick_spritesheet_75: 1107873476
+      salir_onclick_spritesheet_76: 1746422469
+      salir_onclick_spritesheet_77: -877338841
+      salir_onclick_spritesheet_78: 1274175100
+      salir_onclick_spritesheet_79: -724848231
+      salir_onclick_spritesheet_8: -236997138
+      salir_onclick_spritesheet_80: -376220163
+      salir_onclick_spritesheet_81: -1337006603
+      salir_onclick_spritesheet_82: 1591201107
+      salir_onclick_spritesheet_83: -1291210800
+      salir_onclick_spritesheet_84: 1908203215
+      salir_onclick_spritesheet_85: 39765719
+      salir_onclick_spritesheet_86: 923482521
+      salir_onclick_spritesheet_87: -48407816
+      salir_onclick_spritesheet_88: 753743500
+      salir_onclick_spritesheet_89: 1862058379
+      salir_onclick_spritesheet_9: -1076186071
+      salir_onclick_spritesheet_90: -57185069
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
