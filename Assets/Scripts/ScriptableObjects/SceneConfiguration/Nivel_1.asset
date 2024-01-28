@@ -49,5 +49,10 @@ MonoBehaviour:
   tiempoVidaChistes: 3
   tiempoVidaLacayos: 6
   stopTime: 1
-  startTime: 0
-  confetiUsed: 0
+  startTime: 1
+  gameOver: 0
+  confetiUsed: 1
+  primernivel: 1
+  segundonivel: 0
+  tercernivelnivel: 0
+  cuartonivel: 0

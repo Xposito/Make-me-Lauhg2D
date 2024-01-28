@@ -50,4 +50,9 @@ MonoBehaviour:
   tiempoVidaLacayos: 6
   stopTime: 1
   startTime: 0
+  gameOver: 0
   confetiUsed: 0
+  primernivel: 0
+  segundonivel: 0
+  tercernivelnivel: 1
+  cuartonivel: 0

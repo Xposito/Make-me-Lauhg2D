@@ -47,6 +47,8 @@ public class SCR_CalculoTiempo : MonoBehaviour
     private float sombreroTime = 0f; //Tiempo que corre para el spawn de sombreros
     private float chistesTime = 0f; //Tiempo que que corre para el spawn de chistes
     private float targetTime; // Tiempo deseado de espera en segundos
+
+    bool noIntantiate;
     #endregion
 
     private void Start()
@@ -69,7 +71,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
                 sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
 
                 
-                
+                noIntantiate = true;
                 sceneManager.startTime = false;
                 targetTime = sceneManager.tiempoNivel;
                 
@@ -80,19 +82,23 @@ public class SCR_CalculoTiempo : MonoBehaviour
             sombreroTime += Time.deltaTime;
             chistesTime += Time.deltaTime;
 
-            // Comienza la espera cuando se presiona la tecla 'Espacio'
-            if (lacayosTime >= sceneManager.tiempoSpawnLacayos)
+            if (noIntantiate)
             {
-                ElegirLacayo();
+                // Comienza la espera cuando se presiona la tecla 'Espacio'
+                if (lacayosTime >= sceneManager.tiempoSpawnLacayos)
+                {
+                    ElegirLacayo();
+                }
+                if (sombreroTime >= sceneManager.tiempoSpawnSombrero && !sceneManager.IsSombreroInScene)
+                {
+                    ElegirSpawnSombrero();
+                }
+                if (chistesTime >= sceneManager.tiempoSpawnChistes)
+                {
+                    ElegirTipoChiste();
+                }
             }
-            if (sombreroTime >= sceneManager.tiempoSpawnSombrero && !sceneManager.IsSombreroInScene)
-            {
-                ElegirSpawnSombrero();
-            }
-            if (chistesTime >= sceneManager.tiempoSpawnChistes)
-            {
-                ElegirTipoChiste();
-            }
+            
             Final();
         }
         else
@@ -109,6 +115,12 @@ public class SCR_CalculoTiempo : MonoBehaviour
     void Final()
     {
         
+        if(currentTime >= sceneManager.tiempoNivel - 3)
+        {
+            noIntantiate = true;
+        }
+
+
         
         if (currentTime >= sceneManager.tiempoNivel)
         {
@@ -224,7 +236,9 @@ public class SCR_CalculoTiempo : MonoBehaviour
     }
     IEnumerator DestruirLacayo(GameObject chiste)
     {
+        chiste.transform.position = chiste.transform.position + new Vector3(100, 100, 100);
         yield return new WaitForSeconds(sceneManager.tiempoVidaLacayos);
+       
         Destroy(chiste);
     }
     #endregion
