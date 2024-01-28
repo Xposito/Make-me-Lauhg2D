@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Burst.CompilerServices;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
+
 
 public class SCR_InteractManager : MonoBehaviour
 {
@@ -142,25 +142,29 @@ public class SCR_InteractManager : MonoBehaviour
                 {
                     sliderControler.Bean(sceneManager.beanLisa, hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data);
                     scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.scaleTime;
-                    Destroy(hit.collider.gameObject);
+                    //Destroy(hit.collider.gameObject);
+                    hit.collider.gameObject.SetActive(false);
                 }
                 if (hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.ID == 1 && Input.GetMouseButtonDown(0))
                 {
                     sliderControler.Bean(sceneManager.beanRallada, hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data);
                     scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.scaleTime;
-                    Destroy(hit.collider.gameObject);
+                    //Destroy(hit.collider.gameObject);
+                    hit.collider.gameObject.SetActive(false);
                 }
                 if (hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.ID == 2 && Input.GetMouseButtonDown(0))
                 {
                     sliderControler.Bean(sceneManager.beanPuntos, hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data);
                     scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.scaleTime;
-                    Destroy(hit.collider.gameObject);
+                    //Destroy(hit.collider.gameObject);
+                    hit.collider.gameObject.SetActive(false);
                 }
                 if (hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.ID == 3 && Input.GetMouseButtonDown(0))
                 {
                     sliderControler.Bean(sceneManager.beanEstrellas, hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data);
                     scaleTime = hit.collider.gameObject.GetComponent<SCR_Holder>().bean_Data.scaleTime;
-                    Destroy(hit.collider.gameObject);
+                    //Destroy(hit.collider.gameObject);
+                    hit.collider.gameObject.SetActive(false);
                 }
 
 
