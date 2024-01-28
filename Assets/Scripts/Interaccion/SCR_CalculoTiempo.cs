@@ -50,6 +50,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
 
     private void Start()
     {
+        StopAllCoroutines();
         interactManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_InteractManager>();
         sceneManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_Holder>().sceneManager;
         audioManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<SCR_AudioManager>();
@@ -119,7 +120,7 @@ public class SCR_CalculoTiempo : MonoBehaviour
             chistesTime = 0;
             mainMenu.MenuInicio();
 
-
+            StopAllCoroutines();
         }
         
         

@@ -1,0 +1,2744 @@
+fileFormatVersion: 2
+guid: 526626c3714d8194ab3800359455a7b3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa4ad30fa1e3cb48baa2f5d02f61eff
+      internalID: 1394410549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919ca6e10f44a2f49946d7d982e3f857
+      internalID: 1249259424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721cd3f9b4197654a83523454583ef23
+      internalID: 1651874022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942be9cb608cdfc4ba81f74c3e9f52de
+      internalID: -498339729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3276bab950057d43afcd4013ad776b4
+      internalID: -279654295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60429df2adbe87459c65787908fbfc8
+      internalID: 12367227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729df91bca2739844b4ab920f955278f
+      internalID: 284150860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9646695ebd941ee44a562bdc320b0c68
+      internalID: -995355447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1fb6cfa62c6b214e87a45179de5568a
+      internalID: -222693445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5673a6778157b6a4ab04b75f84b8067a
+      internalID: 1752838171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce51f841e4f8124493d0f453181ea29
+      internalID: -1914473482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 2681
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbd3c513e5c54c4ab34080a902a758b
+      internalID: -1032981164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8fd7a1df3992b49b70c79240be99d9
+      internalID: -1897766234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45001e8965a86e142bfd8072816c80ef
+      internalID: 1628369504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26eecd877c32a94fa9a536b50405ee3
+      internalID: -126709089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8fce945abb73342b9831fc91a588dd
+      internalID: -117757815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f322a797583f0547a1afa9b973102f1
+      internalID: 614960504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90dfd522dcebb345be6b85838f62ec9
+      internalID: -392026287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8dc128333c1f9c488a7fc33744436fd
+      internalID: 2002758514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 021c60f8865ed9b4fb232f7cb939068a
+      internalID: 1827567280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312bea8cf63c42a40ae33f012c8b5251
+      internalID: 830733946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfdfb16d0484204ab64e9a847c6ec17
+      internalID: -1425036741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bf30295f197d44e80c8043e99f93ea
+      internalID: -166236047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 2298
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e55ce2b0256fa48859787ab0c5c41a
+      internalID: -226020271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639efedd32614c74daa5caddd7c9fc9a
+      internalID: 2096706489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f8da22ffdc0624d81737f334551afa
+      internalID: -1843866141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93e2c5603c01f249b70429f1bf426d6
+      internalID: 1674768045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d60626fa61b8444a9699c479251ae05
+      internalID: 640216821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa44ba57e927a748aadd0479a865166
+      internalID: 1160803340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b924fecba31af64193a0c3c2e4d8cbd
+      internalID: -519386535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59da9b44ad025994e89ff4c11024a12f
+      internalID: -883852852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b891cdf6f0aaa64caf8fe1f33a1f9c6
+      internalID: -2147229314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0b302fa437d4e4c95597cb3748d55c
+      internalID: -1995676518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de79929e20aaaa54db55968bf82bbac6
+      internalID: -1208253179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc98b764ca01bf45bc4d1cc55698e0f
+      internalID: -569469403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 1915
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77242629a72f72046aa8cecf6f48b415
+      internalID: -643106775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4990606a3f3a98b4c81ecb9677598a23
+      internalID: 185074604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5678c1d0a943540a46a462bdec747d
+      internalID: -1878084964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7332a0eb8c2db4bb291ec8aafed73d
+      internalID: -2077447720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e231e0d15b9f7c40a783c322b350b5a
+      internalID: 1360356200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee21a3f79e1c902479d469b3798135bc
+      internalID: -906942205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca525f18b93b134bbff29b4f23a4a4f
+      internalID: 1418032838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9767781a9950d56469e1a7dd2f0e6db9
+      internalID: 1954355488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2763bb6529e10c848b2da0968004e450
+      internalID: -1266594872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa8377c09fb60844a1e57ed719f87bb
+      internalID: -57063093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f57adf83a4fe1408bb0b5594e1418f
+      internalID: -57680548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1229fb031fa6e59448cf37883cd310fd
+      internalID: 310365515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 1532
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f369e00da53ab4d836474da2c0025d
+      internalID: -314481671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9087ed79ba2a92f41b4a263502888f8e
+      internalID: 1516038315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5708ba37ce9bdfa48b153052c941a264
+      internalID: -815864367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a5973d5ff0e5a41b44d84c648d7bbb
+      internalID: 11386288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c34fc3b613c224b96d28cfe16ffb9b
+      internalID: -1552285850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed5ffbd040f9314ba08fff8ab6c1cea
+      internalID: -2093096512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1548726d0b554bd40905c19d8439d3ac
+      internalID: 15789133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ea7bd44a963074faaf85a44b63ce95
+      internalID: 859191836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a6e912ac9ee2749becad500cd4bab6
+      internalID: 178305431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5daff594fb8304185c1ed18498b700
+      internalID: 1710531384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eae6ae3af8eecf4ba48a3343c2613d7
+      internalID: 536945603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba8135cb9ef57c4b906e87ad59ea8f8
+      internalID: -1227265890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 1149
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94eba4d7532444f46bd697030bbf3339
+      internalID: -739877490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21f1aab6221f7f489720d11ec821904
+      internalID: 1952780998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748a6ee422377fd4191341c07719fa81
+      internalID: -1928686829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2dd0579101067147bd7a84186010879
+      internalID: -1879875579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39b89a25a664fc4c9d36931d3548935
+      internalID: -508798282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c666d24eaf8a0514e9e99607185d2b59
+      internalID: -1982140527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d53f2fb47b168b40bc4ed5132bc269c
+      internalID: 1549133834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59520de2e593ac946868fde6daca9e41
+      internalID: 269854828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e3dd4c1fb606d438fec918a8d72fae
+      internalID: -1858103443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd1a567259f1b94bb2fa62ceef44072
+      internalID: 355124393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4acc282f70f3534fb0c7fef2bdacf65
+      internalID: 2060991216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afb11b88dd309b45b6d5b4558fddc2f
+      internalID: 228480553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 766
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef6d25ec688a9b4fbd527a40a765701
+      internalID: -301383423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73d2dade4a6c7c4e9cfe27af68ad643
+      internalID: -1018154456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea15573fafa6ca24c854560151a5d23e
+      internalID: 1415874533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1d351c1adc2ba4f98baf7056b397ae
+      internalID: -2078905833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c873a0d07e253498ef139fa03586c8
+      internalID: 591857734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903695145d3067d47b5e599d344ea462
+      internalID: -489624344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea69cca59c010f94dbb4b77a989874a1
+      internalID: 1600366687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6def4e6df8f49d46bd369430502edff
+      internalID: 1071898720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950ec99a4d329744a8346eb32cf9a212
+      internalID: 1297335273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 5440
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91bacb8c815a50d4e80d6e9e929659a7
+      internalID: -1873159582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485104160b2ad514982e48ce565dae2d
+      internalID: 1535267196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceefe71c4615a144080055be3ea4d98a
+      internalID: -1335141061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 7480
+        y: 383
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf0fe4a445c4294e856c79d4b932b90
+      internalID: -864845452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7845d9fc4b1761a4a8fbf0a8d45c9e09
+      internalID: 410804696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 0
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342a4bc0cfd3bb04c8f2a3873d8f2541
+      internalID: -1946908060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 0
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412ebea09e23e5845bef9191037bf54b
+      internalID: -23950788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 0
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02f594100b974642a2aa0fc73ae911c
+      internalID: 733816794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 0
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abe536bd855d164db20d24f64ac64c9
+      internalID: -853737206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 0
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c624a0fe90481f545a998d3b5c3300c1
+      internalID: -286042111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar_highlight_spritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 0
+        width: 680
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f2a4bd4966e654c8ec979dcdd8f4d0
+      internalID: 1072503196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -4040.156, y: -1209.2639}
+      - {x: -4064.0623, y: -1324.8114}
+      - {x: -4064.0623, y: -1452.312}
+      - {x: -3996.328, y: -1472.234}
+      - {x: -3414.6091, y: -1472.234}
+      - {x: -3414.6091, y: -1209.2639}
+    - - {x: -3247.2654, y: -1209.2639}
+      - {x: -3362.8123, y: -1217.2327}
+      - {x: -3386.7185, y: -1324.8114}
+      - {x: -3386.7185, y: -1472.234}
+      - {x: -2733.281, y: -1472.234}
+      - {x: -2733.281, y: -1209.2639}
+    - - {x: -2099.7654, y: -1209.2639}
+      - {x: -2167.4998, y: -1217.2327}
+      - {x: -2434.453, y: -1209.2639}
+      - {x: -2693.4373, y: -1209.2639}
+      - {x: -2705.3904, y: -1284.9674}
+      - {x: -2705.3904, y: -1472.234}
+      - {x: -2055.9375, y: -1472.234}
+      - {x: -2055.9375, y: -1217.2327}
+      - {x: -2071.8748, y: -1209.2639}
+    - - {x: -2024.0624, y: -1209.2639}
+      - {x: -2024.0624, y: -1472.234}
+      - {x: -1374.6093, y: -1472.234}
+      - {x: -1374.6093, y: -1209.2639}
+    - - {x: -1326.7968, y: -1209.2639}
+      - {x: -1346.7186, y: -1300.905}
+      - {x: -1346.7186, y: -1456.2964}
+      - {x: -1318.828, y: -1472.234}
+      - {x: -693.2812, y: -1472.234}
+      - {x: -693.2812, y: -1209.2639}
+    - - {x: -645.4687, y: -1261.061}
+      - {x: -665.39056, y: -1340.7489}
+      - {x: -665.39056, y: -1472.234}
+      - {x: -15.937499, y: -1472.234}
+      - {x: -15.937499, y: -1209.2639}
+      - {x: -378.5156, y: -1209.2639}
+      - {x: -625.5468, y: -1217.2327}
+    - - {x: 199.21873, y: -1209.2639}
+      - {x: 59.76562, y: -1221.217}
+      - {x: 51.79687, y: -1237.1547}
+      - {x: 15.937499, y: -1320.827}
+      - {x: 15.937499, y: -1452.312}
+      - {x: 83.67187, y: -1472.234}
+      - {x: 657.4218, y: -1472.234}
+      - {x: 665.39056, y: -1464.2653}
+      - {x: 665.39056, y: -1253.0923}
+      - {x: 657.4218, y: -1209.2639}
+    - - {x: -4052.1091, y: -826.76196}
+      - {x: -4068.0466, y: -882.5435}
+      - {x: -4068.0466, y: -1033.9506}
+      - {x: -4040.156, y: -1089.732}
+      - {x: -3434.531, y: -1089.732}
+      - {x: -3414.6091, y: -1073.7944}
+      - {x: -3414.6091, y: -826.76196}
+    - - {x: -3378.7498, y: -826.76196}
+      - {x: -3386.7185, y: -890.5123}
+      - {x: -3386.7185, y: -1089.732}
+      - {x: -2733.281, y: -1089.732}
+      - {x: -2733.281, y: -850.66833}
+      - {x: -2737.2654, y: -826.76196}
+    - - {x: -2705.3904, y: -826.76196}
+      - {x: -2705.3904, y: -1061.8413}
+      - {x: -2681.4841, y: -1089.732}
+      - {x: -2055.9375, y: -1089.732}
+      - {x: -2055.9375, y: -826.76196}
+    - - {x: -2012.1093, y: -826.76196}
+      - {x: -2028.0468, y: -910.43427}
+      - {x: -2028.0468, y: -1085.7477}
+      - {x: -1876.6405, y: -1089.732}
+      - {x: -1386.5624, y: -1089.732}
+      - {x: -1374.6093, y: -1085.7477}
+      - {x: -1374.6093, y: -826.76196}
+    - - {x: -1310.8593, y: -826.76196}
+      - {x: -1346.7186, y: -926.3719}
+      - {x: -1346.7186, y: -1041.9193}
+      - {x: -1326.7968, y: -1089.732}
+      - {x: -701.24994, y: -1089.732}
+      - {x: -693.2812, y: -1085.7477}
+      - {x: -693.2812, y: -862.6215}
+      - {x: -701.24994, y: -826.76196}
+    - - {x: -661.4062, y: -826.76196}
+      - {x: -665.39056, y: -846.68396}
+      - {x: -665.39056, y: -1089.732}
+      - {x: -19.921873, y: -1089.732}
+      - {x: -15.937499, y: -1085.7477}
+      - {x: -15.937499, y: -826.76196}
+    - - {x: 11.953124, y: -826.76196}
+      - {x: 11.953124, y: -1077.7789}
+      - {x: 131.48436, y: -1089.732}
+      - {x: 665.39056, y: -1089.732}
+      - {x: 665.39056, y: -826.76196}
+    - - {x: 693.2812, y: -826.76196}
+      - {x: 693.2812, y: -1089.732}
+      - {x: 1346.7186, y: -1089.732}
+      - {x: 1346.7186, y: -826.76196}
+    - - {x: 1418.4374, y: -826.76196}
+      - {x: 1390.5468, y: -830.7464}
+      - {x: 1374.6093, y: -886.5279}
+      - {x: 1374.6093, y: -1021.9974}
+      - {x: 1394.5311, y: -1089.732}
+      - {x: 2000.1561, y: -1089.732}
+      - {x: 2024.0624, y: -1065.8257}
+      - {x: 2024.0624, y: -830.7464}
+      - {x: 2020.078, y: -826.76196}
+    - - {x: 2075.8591, y: -826.76196}
+      - {x: 2055.9375, y: -854.6528}
+      - {x: 2055.9375, y: -1073.7944}
+      - {x: 2067.8904, y: -1089.732}
+      - {x: 2689.453, y: -1089.732}
+      - {x: 2705.3904, y: -1081.7633}
+      - {x: 2705.3904, y: -826.76196}
+    - - {x: 2733.281, y: -826.76196}
+      - {x: 2733.281, y: -1089.732}
+      - {x: 3386.7185, y: -1089.732}
+      - {x: 3386.7185, y: -826.76196}
+    - - {x: 3458.4373, y: -826.76196}
+      - {x: 3430.5466, y: -830.7464}
+      - {x: 3414.6091, y: -886.5279}
+      - {x: 3414.6091, y: -1021.9974}
+      - {x: 3434.531, y: -1089.732}
+      - {x: 4040.156, y: -1089.732}
+      - {x: 4064.0623, y: -1065.8257}
+      - {x: 4064.0623, y: -830.7464}
+      - {x: 4060.078, y: -826.76196}
+    - - {x: -4024.2185, y: -444.26004}
+      - {x: -4064.0623, y: -515.9792}
+      - {x: -4064.0623, y: -707.2301}
+      - {x: -3414.6091, y: -707.2301}
+      - {x: -3414.6091, y: -448.24445}
+      - {x: -3430.5466, y: -444.26004}
+    - - {x: -3374.7654, y: -444.26004}
+      - {x: -3386.7185, y: -519.96356}
+      - {x: -3386.7185, y: -695.2769}
+      - {x: -3251.2498, y: -707.2301}
+      - {x: -2741.2498, y: -707.2301}
+      - {x: -2733.281, y: -699.26135}
+      - {x: -2733.281, y: -444.26004}
+    - - {x: -2685.4685, y: -444.26004}
+      - {x: -2705.3904, y: -519.96356}
+      - {x: -2705.3904, y: -707.2301}
+      - {x: -2063.9062, y: -707.2301}
+      - {x: -2055.9375, y: -703.2457}
+      - {x: -2055.9375, y: -444.26004}
+    - - {x: -2020.078, y: -444.26004}
+      - {x: -2024.0624, y: -476.13522}
+      - {x: -2024.0624, y: -707.2301}
+      - {x: -1374.6093, y: -707.2301}
+      - {x: -1374.6093, y: -444.26004}
+    - - {x: -1302.8905, y: -444.26004}
+      - {x: -1346.7186, y: -543.86993}
+      - {x: -1346.7186, y: -647.46423}
+      - {x: -1322.8124, y: -707.2301}
+      - {x: -693.2812, y: -707.2301}
+      - {x: -693.2812, y: -452.22885}
+      - {x: -709.2187, y: -444.26004}
+    - - {x: -665.39056, y: -707.2301}
+      - {x: -27.890623, y: -707.2301}
+      - {x: -15.937499, y: -691.29254}
+      - {x: -15.937499, y: -464.18204}
+      - {x: -19.921873, y: -444.26004}
+      - {x: -629.5312, y: -444.26004}
+      - {x: -665.39056, y: -559.8075}
+    - - {x: 15.937499, y: -699.26135}
+      - {x: 143.43748, y: -707.2301}
+      - {x: 645.4687, y: -707.2301}
+      - {x: 665.39056, y: -695.2769}
+      - {x: 665.39056, y: -444.26004}
+      - {x: 119.53124, y: -444.26004}
+      - {x: 59.76562, y: -448.24445}
+      - {x: 15.937499, y: -523.94794}
+    - - {x: 697.26556, y: -444.26004}
+      - {x: 693.2812, y: -472.15082}
+      - {x: 693.2812, y: -691.29254}
+      - {x: 780.93744, y: -707.2301}
+      - {x: 1346.7186, y: -707.2301}
+      - {x: 1346.7186, y: -444.26004}
+    - - {x: 1378.5936, y: -444.26004}
+      - {x: 1374.6093, y: -460.19763}
+      - {x: 1374.6093, y: -707.2301}
+      - {x: 2024.0624, y: -707.2301}
+      - {x: 2024.0624, y: -444.26004}
+    - - {x: 2055.9375, y: -699.26135}
+      - {x: 2183.4373, y: -707.2301}
+      - {x: 2685.4685, y: -707.2301}
+      - {x: 2705.3904, y: -695.2769}
+      - {x: 2705.3904, y: -444.26004}
+      - {x: 2159.531, y: -444.26004}
+      - {x: 2099.7654, y: -448.24445}
+      - {x: 2055.9375, y: -523.94794}
+    - - {x: 2737.2654, y: -444.26004}
+      - {x: 2733.281, y: -472.15082}
+      - {x: 2733.281, y: -691.29254}
+      - {x: 2820.9373, y: -707.2301}
+      - {x: 3386.7185, y: -707.2301}
+      - {x: 3386.7185, y: -444.26004}
+    - - {x: 3418.5935, y: -444.26004}
+      - {x: 3414.6091, y: -460.19763}
+      - {x: 3414.6091, y: -707.2301}
+      - {x: 4064.0623, y: -707.2301}
+      - {x: 4064.0623, y: -444.26004}
+    - - {x: -4052.1091, y: -61.758125}
+      - {x: -4064.0623, y: -109.57086}
+      - {x: -4064.0623, y: -308.79062}
+      - {x: -3928.5935, y: -324.7282}
+      - {x: -3414.6091, y: -324.7282}
+      - {x: -3414.6091, y: -61.758125}
+    - - {x: -3378.7498, y: -61.758125}
+      - {x: -3386.7185, y: -93.633286}
+      - {x: -3386.7185, y: -268.94666}
+      - {x: -3358.828, y: -324.7282}
+      - {x: -2733.281, y: -324.7282}
+      - {x: -2733.281, y: -61.758125}
+    - - {x: -2681.4841, y: -61.758125}
+      - {x: -2705.3904, y: -157.3836}
+      - {x: -2705.3904, y: -324.7282}
+      - {x: -2055.9375, y: -324.7282}
+      - {x: -2055.9375, y: -61.758125}
+    - - {x: -2024.0624, y: -312.77502}
+      - {x: -1984.2186, y: -324.7282}
+      - {x: -1374.6093, y: -324.7282}
+      - {x: -1374.6093, y: -73.71131}
+      - {x: -1390.5468, y: -61.758125}
+      - {x: -1948.3593, y: -61.758125}
+      - {x: -2024.0624, y: -73.71131}
+    - - {x: -1330.7811, y: -61.758125}
+      - {x: -1346.7186, y: -161.368}
+      - {x: -1346.7186, y: -312.77502}
+      - {x: -1159.453, y: -324.7282}
+      - {x: -717.18744, y: -324.7282}
+      - {x: -693.2812, y: -304.8062}
+      - {x: -693.2812, y: -65.742516}
+      - {x: -701.24994, y: -61.758125}
+    - - {x: -653.43744, y: -61.758125}
+      - {x: -665.39056, y: -101.60207}
+      - {x: -665.39056, y: -272.93106}
+      - {x: -645.4687, y: -324.7282}
+      - {x: -31.874998, y: -324.7282}
+      - {x: -15.937499, y: -300.82184}
+      - {x: -15.937499, y: -61.758125}
+    - - {x: 87.65624, y: -61.758125}
+      - {x: 15.937499, y: -73.71131}
+      - {x: 15.937499, y: -312.77502}
+      - {x: 294.84372, y: -324.7282}
+      - {x: 657.4218, y: -324.7282}
+      - {x: 665.39056, y: -312.77502}
+      - {x: 665.39056, y: -61.758125}
+    - - {x: 721.1718, y: -61.758125}
+      - {x: 717.18744, y: -73.71131}
+      - {x: 693.2812, y: -189.25877}
+      - {x: 693.2812, y: -324.7282}
+      - {x: 1334.7655, y: -324.7282}
+      - {x: 1346.7186, y: -320.7438}
+      - {x: 1346.7186, y: -61.758125}
+    - - {x: 1390.5468, y: -61.758125}
+      - {x: 1374.6093, y: -141.44603}
+      - {x: 1374.6093, y: -324.7282}
+      - {x: 2020.078, y: -324.7282}
+      - {x: 2024.0624, y: -320.7438}
+      - {x: 2024.0624, y: -61.758125}
+    - - {x: 2127.656, y: -61.758125}
+      - {x: 2055.9375, y: -73.71131}
+      - {x: 2055.9375, y: -312.77502}
+      - {x: 2334.8435, y: -324.7282}
+      - {x: 2697.4216, y: -324.7282}
+      - {x: 2705.3904, y: -312.77502}
+      - {x: 2705.3904, y: -61.758125}
+    - - {x: 2761.1716, y: -61.758125}
+      - {x: 2757.1873, y: -73.71131}
+      - {x: 2733.281, y: -189.25877}
+      - {x: 2733.281, y: -324.7282}
+      - {x: 3374.7654, y: -324.7282}
+      - {x: 3386.7185, y: -320.7438}
+      - {x: 3386.7185, y: -61.758125}
+    - - {x: 3430.5466, y: -61.758125}
+      - {x: 3414.6091, y: -141.44603}
+      - {x: 3414.6091, y: -324.7282}
+      - {x: 4060.078, y: -324.7282}
+      - {x: 4064.0623, y: -320.7438}
+      - {x: 4064.0623, y: -61.758125}
+    - - {x: -4028.203, y: 324.7282}
+      - {x: -4064.0623, y: 249.02469}
+      - {x: -4064.0623, y: 97.61768}
+      - {x: -4044.1404, y: 61.758125}
+      - {x: -3426.5623, y: 61.758125}
+      - {x: -3414.6091, y: 69.72691}
+      - {x: -3414.6091, y: 308.79062}
+      - {x: -3434.531, y: 324.7282}
+    - - {x: -3378.7498, y: 324.7282}
+      - {x: -3386.7185, y: 280.89984}
+      - {x: -3386.7185, y: 61.758125}
+      - {x: -2741.2498, y: 61.758125}
+      - {x: -2733.281, y: 69.72691}
+      - {x: -2733.281, y: 300.82184}
+      - {x: -2741.2498, y: 324.7282}
+    - - {x: -2621.7185, y: 324.7282}
+      - {x: -2665.5466, y: 320.7438}
+      - {x: -2705.3904, y: 217.14954}
+      - {x: -2705.3904, y: 117.53966}
+      - {x: -2681.4841, y: 61.758125}
+      - {x: -2083.828, y: 61.758125}
+      - {x: -2055.9375, y: 73.71131}
+      - {x: -2055.9375, y: 304.8062}
+      - {x: -2059.9219, y: 324.7282}
+    - - {x: -1992.1874, y: 324.7282}
+      - {x: -2020.078, y: 268.94666}
+      - {x: -2024.0624, y: 233.08711}
+      - {x: -2024.0624, y: 81.6801}
+      - {x: -2004.1405, y: 61.758125}
+      - {x: -1374.6093, y: 61.758125}
+      - {x: -1374.6093, y: 324.7282}
+    - - {x: -952.26556, y: 324.7282}
+      - {x: -1302.8905, y: 316.7594}
+      - {x: -1346.7186, y: 197.22755}
+      - {x: -1346.7186, y: 65.742516}
+      - {x: -1290.9374, y: 61.758125}
+      - {x: -693.2812, y: 61.758125}
+      - {x: -693.2812, y: 324.7282}
+    - - {x: -665.39056, y: 69.72691}
+      - {x: -649.45306, y: 61.758125}
+      - {x: -15.937499, y: 61.758125}
+      - {x: -15.937499, y: 312.77502}
+      - {x: -19.921873, y: 324.7282}
+      - {x: -629.5312, y: 324.7282}
+      - {x: -665.39056, y: 296.83743}
+    - - {x: 235.07811, y: 324.7282}
+      - {x: 51.79687, y: 320.7438}
+      - {x: 15.937499, y: 249.02469}
+      - {x: 15.937499, y: 97.61768}
+      - {x: 35.85937, y: 61.758125}
+      - {x: 665.39056, y: 61.758125}
+      - {x: 665.39056, y: 324.7282}
+    - - {x: 729.14056, y: 324.7282}
+      - {x: 693.2812, y: 201.21196}
+      - {x: 693.2812, y: 61.758125}
+      - {x: 1346.7186, y: 61.758125}
+      - {x: 1346.7186, y: 308.79062}
+      - {x: 1330.7811, y: 324.7282}
+    - - {x: 1406.4843, y: 324.7282}
+      - {x: 1374.6093, y: 237.0715}
+      - {x: 1374.6093, y: 113.55526}
+      - {x: 1386.5624, y: 61.758125}
+      - {x: 2024.0624, y: 61.758125}
+      - {x: 2024.0624, y: 324.7282}
+    - - {x: 2275.078, y: 324.7282}
+      - {x: 2091.7966, y: 320.7438}
+      - {x: 2055.9375, y: 249.02469}
+      - {x: 2055.9375, y: 97.61768}
+      - {x: 2075.8591, y: 61.758125}
+      - {x: 2705.3904, y: 61.758125}
+      - {x: 2705.3904, y: 324.7282}
+    - - {x: 2769.1404, y: 324.7282}
+      - {x: 2733.281, y: 201.21196}
+      - {x: 2733.281, y: 61.758125}
+      - {x: 3386.7185, y: 61.758125}
+      - {x: 3386.7185, y: 308.79062}
+      - {x: 3370.781, y: 324.7282}
+    - - {x: 3446.4841, y: 324.7282}
+      - {x: 3414.6091, y: 237.0715}
+      - {x: 3414.6091, y: 113.55526}
+      - {x: 3426.5623, y: 61.758125}
+      - {x: 4064.0623, y: 61.758125}
+      - {x: 4064.0623, y: 324.7282}
+    - - {x: -4064.0623, y: 448.24445}
+      - {x: -4020.2341, y: 444.26004}
+      - {x: -3414.6091, y: 444.26004}
+      - {x: -3414.6091, y: 707.2301}
+      - {x: -3980.3904, y: 707.2301}
+      - {x: -4064.0623, y: 691.29254}
+    - - {x: -3052.031, y: 707.2301}
+      - {x: -3346.8748, y: 703.2457}
+      - {x: -3386.7185, y: 623.55786}
+      - {x: -3386.7185, y: 484.104}
+      - {x: -3366.7966, y: 444.26004}
+      - {x: -2761.1716, y: 444.26004}
+      - {x: -2733.281, y: 464.18204}
+      - {x: -2733.281, y: 687.30817}
+      - {x: -2753.203, y: 707.2301}
+    - - {x: -2215.3123, y: 707.2301}
+      - {x: -2661.5623, y: 699.26135}
+      - {x: -2705.3904, y: 615.58905}
+      - {x: -2705.3904, y: 504.02597}
+      - {x: -2685.4685, y: 444.26004}
+      - {x: -2055.9375, y: 444.26004}
+      - {x: -2055.9375, y: 703.2457}
+      - {x: -2067.8904, y: 707.2301}
+    - - {x: -2016.0936, y: 707.2301}
+      - {x: -2024.0624, y: 655.433}
+      - {x: -2024.0624, y: 448.24445}
+      - {x: -1972.2655, y: 444.26004}
+      - {x: -1382.578, y: 444.26004}
+      - {x: -1374.6093, y: 448.24445}
+      - {x: -1374.6093, y: 707.2301}
+    - - {x: -1302.8905, y: 707.2301}
+      - {x: -1346.7186, y: 595.66705}
+      - {x: -1346.7186, y: 460.19763}
+      - {x: -1267.0311, y: 444.26004}
+      - {x: -693.2812, y: 444.26004}
+      - {x: -693.2812, y: 707.2301}
+    - - {x: -175.31248, y: 707.2301}
+      - {x: -621.56244, y: 699.26135}
+      - {x: -665.39056, y: 591.6827}
+      - {x: -665.39056, y: 527.9324}
+      - {x: -653.43744, y: 472.15082}
+      - {x: -637.49994, y: 452.22885}
+      - {x: -446.24997, y: 444.26004}
+      - {x: -15.937499, y: 444.26004}
+      - {x: -15.937499, y: 703.2457}
+      - {x: -27.890623, y: 707.2301}
+    - - {x: 27.890623, y: 707.2301}
+      - {x: 15.937499, y: 647.46423}
+      - {x: 15.937499, y: 452.22885}
+      - {x: 135.46873, y: 444.26004}
+      - {x: 665.39056, y: 444.26004}
+      - {x: 665.39056, y: 707.2301}
+    - - {x: 1326.7968, y: 707.2301}
+      - {x: 1059.8436, y: 707.2301}
+      - {x: 737.1093, y: 699.26135}
+      - {x: 693.2812, y: 619.5734}
+      - {x: 693.2812, y: 484.104}
+      - {x: 713.20306, y: 444.26004}
+      - {x: 1318.828, y: 444.26004}
+      - {x: 1346.7186, y: 464.18204}
+      - {x: 1346.7186, y: 651.4486}
+      - {x: 1342.7343, y: 687.30817}
+    - - {x: 1386.5624, y: 707.2301}
+      - {x: 1374.6093, y: 623.55786}
+      - {x: 1374.6093, y: 527.9324}
+      - {x: 1386.5624, y: 472.15082}
+      - {x: 1402.4999, y: 452.22885}
+      - {x: 1581.7968, y: 444.26004}
+      - {x: 2024.0624, y: 444.26004}
+      - {x: 2024.0624, y: 707.2301}
+    - - {x: 2067.8904, y: 707.2301}
+      - {x: 2055.9375, y: 647.46423}
+      - {x: 2055.9375, y: 452.22885}
+      - {x: 2175.4685, y: 444.26004}
+      - {x: 2705.3904, y: 444.26004}
+      - {x: 2705.3904, y: 707.2301}
+    - - {x: 3366.7966, y: 707.2301}
+      - {x: 3099.8435, y: 707.2301}
+      - {x: 2777.1091, y: 699.26135}
+      - {x: 2733.281, y: 619.5734}
+      - {x: 2733.281, y: 484.104}
+      - {x: 2753.203, y: 444.26004}
+      - {x: 3358.828, y: 444.26004}
+      - {x: 3386.7185, y: 464.18204}
+      - {x: 3386.7185, y: 651.4486}
+      - {x: 3382.7341, y: 687.30817}
+    - - {x: 3426.5623, y: 707.2301}
+      - {x: 3414.6091, y: 623.55786}
+      - {x: 3414.6091, y: 527.9324}
+      - {x: 3426.5623, y: 472.15082}
+      - {x: 3442.4998, y: 452.22885}
+      - {x: 3621.7966, y: 444.26004}
+      - {x: 4064.0623, y: 444.26004}
+      - {x: 4064.0623, y: 707.2301}
+    - - {x: -4064.0623, y: 982.1534}
+      - {x: -4064.0623, y: 882.5435}
+      - {x: -4060.078, y: 850.66833}
+      - {x: -4036.1716, y: 830.7464}
+      - {x: -4012.2654, y: 826.76196}
+      - {x: -3414.6091, y: 826.76196}
+      - {x: -3414.6091, y: 1089.732}
+      - {x: -3701.4841, y: 1089.732}
+      - {x: -4020.2341, y: 1081.7633}
+    - - {x: -3255.2341, y: 1089.732}
+      - {x: -3386.7185, y: 1081.7633}
+      - {x: -3386.7185, y: 834.7308}
+      - {x: -3303.0466, y: 826.76196}
+      - {x: -2733.281, y: 826.76196}
+      - {x: -2733.281, y: 1089.732}
+    - - {x: -2705.3904, y: 830.7464}
+      - {x: -2677.4998, y: 826.76196}
+      - {x: -2055.9375, y: 826.76196}
+      - {x: -2055.9375, y: 1057.8569}
+      - {x: -2063.9062, y: 1089.732}
+      - {x: -2677.4998, y: 1089.732}
+      - {x: -2705.3904, y: 1077.7789}
+    - - {x: -1988.203, y: 1089.732}
+      - {x: -2004.1405, y: 1057.8569}
+      - {x: -2024.0624, y: 1006.05975}
+      - {x: -2024.0624, y: 858.63715}
+      - {x: -2012.1093, y: 826.76196}
+      - {x: -1378.5936, y: 826.76196}
+      - {x: -1374.6093, y: 834.7308}
+      - {x: -1374.6093, y: 1089.732}
+    - - {x: -1012.0312, y: 1089.732}
+      - {x: -1306.8749, y: 1081.7633}
+      - {x: -1346.7186, y: 978.169}
+      - {x: -1346.7186, y: 830.7464}
+      - {x: -1294.9218, y: 826.76196}
+      - {x: -697.26556, y: 826.76196}
+      - {x: -693.2812, y: 830.7464}
+      - {x: -693.2812, y: 1069.81}
+      - {x: -713.20306, y: 1089.732}
+    - - {x: -55.781246, y: 1089.732}
+      - {x: -87.65624, y: 1085.7477}
+      - {x: -621.56244, y: 1077.7789}
+      - {x: -665.39056, y: 1018.01294}
+      - {x: -665.39056, y: 862.6215}
+      - {x: -649.45306, y: 826.76196}
+      - {x: -15.937499, y: 826.76196}
+      - {x: -15.937499, y: 1085.7477}
+      - {x: -27.890623, y: 1089.732}
+    - - {x: 645.4687, y: 1089.732}
+      - {x: 23.906248, y: 1089.732}
+      - {x: 15.937499, y: 1037.9349}
+      - {x: 15.937499, y: 826.76196}
+      - {x: 657.4218, y: 826.76196}
+      - {x: 665.39056, y: 850.66833}
+      - {x: 665.39056, y: 998.091}
+      - {x: 661.4062, y: 1085.7477}
+    - - {x: 745.07806, y: 1089.732}
+      - {x: 693.2812, y: 1025.9817}
+      - {x: 693.2812, y: 850.66833}
+      - {x: 705.2343, y: 826.76196}
+      - {x: 1318.828, y: 826.76196}
+      - {x: 1346.7186, y: 838.71515}
+      - {x: 1346.7186, y: 1069.81}
+      - {x: 1326.7968, y: 1089.732}
+    - - {x: 1374.6093, y: 1089.732}
+      - {x: 1374.6093, y: 830.7464}
+      - {x: 1434.3749, y: 826.76196}
+      - {x: 2024.0624, y: 826.76196}
+      - {x: 2024.0624, y: 1089.732}
+    - - {x: 2685.4685, y: 1089.732}
+      - {x: 2063.9062, y: 1089.732}
+      - {x: 2055.9375, y: 1037.9349}
+      - {x: 2055.9375, y: 826.76196}
+      - {x: 2697.4216, y: 826.76196}
+      - {x: 2705.3904, y: 850.66833}
+      - {x: 2705.3904, y: 998.091}
+      - {x: 2701.406, y: 1085.7477}
+    - - {x: 2785.078, y: 1089.732}
+      - {x: 2733.281, y: 1025.9817}
+      - {x: 2733.281, y: 850.66833}
+      - {x: 2745.2341, y: 826.76196}
+      - {x: 3358.828, y: 826.76196}
+      - {x: 3386.7185, y: 838.71515}
+      - {x: 3386.7185, y: 1069.81}
+      - {x: 3366.7966, y: 1089.732}
+    - - {x: 3414.6091, y: 1089.732}
+      - {x: 3414.6091, y: 830.7464}
+      - {x: 3474.3748, y: 826.76196}
+      - {x: 4064.0623, y: 826.76196}
+      - {x: 4064.0623, y: 1089.732}
+    - - {x: -3948.5154, y: 1472.234}
+      - {x: -4064.0623, y: 1456.2964}
+      - {x: -4064.0623, y: 1209.2639}
+      - {x: -3418.5935, y: 1209.2639}
+      - {x: -3414.6091, y: 1213.2483}
+      - {x: -3414.6091, y: 1472.234}
+    - - {x: -3386.7185, y: 1384.5773}
+      - {x: -3386.7185, y: 1253.0923}
+      - {x: -3366.7966, y: 1209.2639}
+      - {x: -2733.281, y: 1209.2639}
+      - {x: -2733.281, y: 1472.234}
+      - {x: -3223.3591, y: 1472.234}
+      - {x: -3346.8748, y: 1468.2496}
+    - - {x: -2689.453, y: 1472.234}
+      - {x: -2705.3904, y: 1428.4056}
+      - {x: -2705.3904, y: 1269.0298}
+      - {x: -2685.4685, y: 1209.2639}
+      - {x: -2075.8591, y: 1209.2639}
+      - {x: -2055.9375, y: 1221.217}
+      - {x: -2055.9375, y: 1472.234}
+    - - {x: -2012.1093, y: 1472.234}
+      - {x: -2024.0624, y: 1436.3744}
+      - {x: -2024.0624, y: 1241.139}
+      - {x: -2008.1249, y: 1209.2639}
+      - {x: -1374.6093, y: 1209.2639}
+      - {x: -1374.6093, y: 1472.234}
+    - - {x: -1059.8436, y: 1472.234}
+      - {x: -1322.8124, y: 1460.2808}
+      - {x: -1346.7186, y: 1376.6085}
+      - {x: -1346.7186, y: 1241.139}
+      - {x: -1338.7499, y: 1209.2639}
+      - {x: -693.2812, y: 1209.2639}
+      - {x: -693.2812, y: 1468.2496}
+      - {x: -697.26556, y: 1472.234}
+    - - {x: -15.937499, y: 1209.2639}
+      - {x: -15.937499, y: 1472.234}
+      - {x: -665.39056, y: 1472.234}
+      - {x: -665.39056, y: 1209.2639}
+    - - {x: 15.937499, y: 1472.234}
+      - {x: 15.937499, y: 1217.2327}
+      - {x: 211.17186, y: 1209.2639}
+      - {x: 641.4843, y: 1209.2639}
+      - {x: 665.39056, y: 1229.1859}
+      - {x: 665.39056, y: 1472.234}
+    - - {x: 693.2812, y: 1472.234}
+      - {x: 693.2812, y: 1217.2327}
+      - {x: 725.1562, y: 1209.2639}
+      - {x: 1346.7186, y: 1209.2639}
+      - {x: 1346.7186, y: 1472.234}
+    - - {x: 1374.6093, y: 1472.234}
+      - {x: 1374.6093, y: 1261.061}
+      - {x: 1390.5468, y: 1209.2639}
+      - {x: 2024.0624, y: 1209.2639}
+      - {x: 2024.0624, y: 1472.234}
+    - - {x: 2055.9375, y: 1472.234}
+      - {x: 2055.9375, y: 1217.2327}
+      - {x: 2251.1716, y: 1209.2639}
+      - {x: 2681.4841, y: 1209.2639}
+      - {x: 2705.3904, y: 1229.1859}
+      - {x: 2705.3904, y: 1472.234}
+    - - {x: 2733.281, y: 1472.234}
+      - {x: 2733.281, y: 1217.2327}
+      - {x: 2765.156, y: 1209.2639}
+      - {x: 3386.7185, y: 1209.2639}
+      - {x: 3386.7185, y: 1472.234}
+    - - {x: 3538.1248, y: 1472.234}
+      - {x: 3430.5466, y: 1452.312}
+      - {x: 3414.6091, y: 1412.468}
+      - {x: 3414.6091, y: 1261.061}
+      - {x: 3430.5466, y: 1209.2639}
+      - {x: 4064.0623, y: 1209.2639}
+      - {x: 4064.0623, y: 1472.234}
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      jugar_highlight_spritesheet_0: 1394410549
+      jugar_highlight_spritesheet_1: 1249259424
+      jugar_highlight_spritesheet_10: -1914473482
+      jugar_highlight_spritesheet_11: -1032981164
+      jugar_highlight_spritesheet_12: -1897766234
+      jugar_highlight_spritesheet_13: 1628369504
+      jugar_highlight_spritesheet_14: -126709089
+      jugar_highlight_spritesheet_15: -117757815
+      jugar_highlight_spritesheet_16: 614960504
+      jugar_highlight_spritesheet_17: -392026287
+      jugar_highlight_spritesheet_18: 2002758514
+      jugar_highlight_spritesheet_19: 1827567280
+      jugar_highlight_spritesheet_2: 1651874022
+      jugar_highlight_spritesheet_20: 830733946
+      jugar_highlight_spritesheet_21: -1425036741
+      jugar_highlight_spritesheet_22: -166236047
+      jugar_highlight_spritesheet_23: -226020271
+      jugar_highlight_spritesheet_24: 2096706489
+      jugar_highlight_spritesheet_25: -1843866141
+      jugar_highlight_spritesheet_26: 1674768045
+      jugar_highlight_spritesheet_27: 640216821
+      jugar_highlight_spritesheet_28: 1160803340
+      jugar_highlight_spritesheet_29: -519386535
+      jugar_highlight_spritesheet_3: -498339729
+      jugar_highlight_spritesheet_30: -883852852
+      jugar_highlight_spritesheet_31: -2147229314
+      jugar_highlight_spritesheet_32: -1995676518
+      jugar_highlight_spritesheet_33: -1208253179
+      jugar_highlight_spritesheet_34: -569469403
+      jugar_highlight_spritesheet_35: -643106775
+      jugar_highlight_spritesheet_36: 185074604
+      jugar_highlight_spritesheet_37: -1878084964
+      jugar_highlight_spritesheet_38: -2077447720
+      jugar_highlight_spritesheet_39: 1360356200
+      jugar_highlight_spritesheet_4: -279654295
+      jugar_highlight_spritesheet_40: -906942205
+      jugar_highlight_spritesheet_41: 1418032838
+      jugar_highlight_spritesheet_42: 1954355488
+      jugar_highlight_spritesheet_43: -1266594872
+      jugar_highlight_spritesheet_44: -57063093
+      jugar_highlight_spritesheet_45: -57680548
+      jugar_highlight_spritesheet_46: 310365515
+      jugar_highlight_spritesheet_47: -314481671
+      jugar_highlight_spritesheet_48: 1516038315
+      jugar_highlight_spritesheet_49: -815864367
+      jugar_highlight_spritesheet_5: 12367227
+      jugar_highlight_spritesheet_50: 11386288
+      jugar_highlight_spritesheet_51: -1552285850
+      jugar_highlight_spritesheet_52: -2093096512
+      jugar_highlight_spritesheet_53: 15789133
+      jugar_highlight_spritesheet_54: 859191836
+      jugar_highlight_spritesheet_55: 178305431
+      jugar_highlight_spritesheet_56: 1710531384
+      jugar_highlight_spritesheet_57: 536945603
+      jugar_highlight_spritesheet_58: -1227265890
+      jugar_highlight_spritesheet_59: -739877490
+      jugar_highlight_spritesheet_6: 284150860
+      jugar_highlight_spritesheet_60: 1952780998
+      jugar_highlight_spritesheet_61: -1928686829
+      jugar_highlight_spritesheet_62: -1879875579
+      jugar_highlight_spritesheet_63: -508798282
+      jugar_highlight_spritesheet_64: -1982140527
+      jugar_highlight_spritesheet_65: 1549133834
+      jugar_highlight_spritesheet_66: 269854828
+      jugar_highlight_spritesheet_67: -1858103443
+      jugar_highlight_spritesheet_68: 355124393
+      jugar_highlight_spritesheet_69: 2060991216
+      jugar_highlight_spritesheet_7: -995355447
+      jugar_highlight_spritesheet_70: 228480553
+      jugar_highlight_spritesheet_71: -301383423
+      jugar_highlight_spritesheet_72: -1018154456
+      jugar_highlight_spritesheet_73: 1415874533
+      jugar_highlight_spritesheet_74: -2078905833
+      jugar_highlight_spritesheet_75: 591857734
+      jugar_highlight_spritesheet_76: -489624344
+      jugar_highlight_spritesheet_77: 1600366687
+      jugar_highlight_spritesheet_78: 1071898720
+      jugar_highlight_spritesheet_79: 1297335273
+      jugar_highlight_spritesheet_8: -222693445
+      jugar_highlight_spritesheet_80: -1873159582
+      jugar_highlight_spritesheet_81: 1535267196
+      jugar_highlight_spritesheet_82: -1335141061
+      jugar_highlight_spritesheet_83: -864845452
+      jugar_highlight_spritesheet_84: 410804696
+      jugar_highlight_spritesheet_85: -1946908060
+      jugar_highlight_spritesheet_86: -23950788
+      jugar_highlight_spritesheet_87: 733816794
+      jugar_highlight_spritesheet_88: -853737206
+      jugar_highlight_spritesheet_89: -286042111
+      jugar_highlight_spritesheet_9: 1752838171
+      jugar_highlight_spritesheet_90: 1072503196
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
