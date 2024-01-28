@@ -24,7 +24,7 @@ public class SCR_SliderControler : MonoBehaviour
     public GameObject cambiosenfadado;
     public GameObject cambiosMuyEnfadado;
 
-    bool muycontento = true;
+    bool muycontento;
     bool contento;
     bool serio;
     bool enfadado;
@@ -100,6 +100,25 @@ public class SCR_SliderControler : MonoBehaviour
         if (timer <= slider.maxValue * 80 / 100 && timer > slider.maxValue * 60 / 100)
         {
             contento = true;
+            muycontento = false;
+
+            if (contento)
+            {
+                muycontento = false;
+                enfadado = false;
+                serio = false;
+                muyenfadado = false;
+
+                cambiosContento.SetActive(true);
+            }
+            else
+            {
+                cambiosMuyEnfadado.SetActive(false);
+                cambiosenfadado.SetActive(false);
+                cambiosserio.SetActive(false);
+                cambiosMuyContento.SetActive(false);
+            }
+
             //if (contento)
             //{
             //    StopCoroutine(cambioestado(1));
@@ -114,7 +133,26 @@ public class SCR_SliderControler : MonoBehaviour
         }
         if (timer <= slider.maxValue * 100 / 100 && timer > slider.maxValue * 80 / 100)
         {
+          
             muycontento = true;
+
+            if (muycontento)
+            {
+                contento = false;
+                enfadado = false;
+                serio = false;
+                muyenfadado = false;
+
+                cambiosMuyContento.SetActive(true);
+            }
+            else
+            {
+                cambiosMuyEnfadado.SetActive(false);
+                cambiosenfadado.SetActive(false);
+                cambiosserio.SetActive(false);
+                cambiosContento.SetActive(false);
+            }
+
             //if (muycontento)
             //{
             //    StopCoroutine(cambioestado(1));
@@ -129,24 +167,41 @@ public class SCR_SliderControler : MonoBehaviour
         }
 
 
-        if (muycontento)
-        {
-            contento = false;
-            enfadado = false;
-            serio = false;
-            muyenfadado = false;
+        //if (muycontento)
+        //{
+        //    contento = false;
+        //    enfadado = false;
+        //    serio = false;
+        //    muyenfadado = false;
 
-            cambiosMuyContento.SetActive(true);
-        }
-        else
-        {
-            cambiosMuyEnfadado.SetActive(false);
-            cambiosenfadado.SetActive(false);
-            cambiosserio.SetActive(false);
-            cambiosContento.SetActive(false);
-        }
+        //    cambiosMuyContento.SetActive(true);
+        //}
+        //else
+        //{
+        //    cambiosMuyEnfadado.SetActive(false);
+        //    cambiosenfadado.SetActive(false);
+        //    cambiosserio.SetActive(false);
+        //    cambiosContento.SetActive(false);
+        //}
 
-        if(stopTimer)
+        //if (contento)
+        //{
+        //    muycontento = false;
+        //    enfadado = false;
+        //    serio = false;
+        //    muyenfadado = false;
+
+        //    cambiosContento.SetActive(true);
+        //}
+        //else
+        //{
+        //    cambiosMuyEnfadado.SetActive(false);
+        //    cambiosenfadado.SetActive(false);
+        //    cambiosserio.SetActive(false);
+        //    cambiosMuyContento.SetActive(false);
+        //}
+
+        if (stopTimer)
         {
             //Volver al inicio.
         }
@@ -285,7 +340,7 @@ public class SCR_SliderControler : MonoBehaviour
     //IEnumerator cambioestado(int numerodelestado)
     //{
     //    cambiosdeAnimo[numerodelestado].SetActive(true);
-        
+
 
     //    yield return new WaitForSeconds(1f);
 
@@ -305,7 +360,7 @@ public class SCR_SliderControler : MonoBehaviour
     //    cambiosdeAnimo[numerodelestado].SetActive(true);
 
 
-        
+
 
     //    for (int i = 0; i < cambiosdeAnimo.Length;)
     //    {
